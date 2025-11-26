@@ -1,0 +1,36 @@
+%!Adobe-FontList 1.25
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/mariosdiamnatis/Documents/00-Personal/Alex_Noein-V3/Document fonts/AdobeFnt25.lst
+FileLength:570
+FileModTime:785853947
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Figtree-Light
+FamilyName:Figtree
+StyleName:Light
+MenuName:Figtree Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Figtree Light
+WritingScript:Roman
+OutlineFileName:/Users/mariosdiamnatis/Documents/00-Personal/Alex_Noein-V3/Document fonts/Figtree-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:39988
+FileModTime:768846566
+NameArray:0,Win,1,Figtree Light
+NameArray:0,Win,16,Figtree
+%EndFont
+
