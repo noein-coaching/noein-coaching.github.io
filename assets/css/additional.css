@@ -1,0 +1,452 @@
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round:100,300,400,500,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i");
+
+@font-face {
+    font-family: 'GothamRoundedBold';
+    src: url('../fonts/gothamrnd-bold.eot');
+    src: url('../fonts/gothamrnd-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothamrnd-bold.woff') format('woff'),
+         url('../fonts/gothamrnd-bold.ttf') format('truetype'),
+         url('../fonts/gothamrnd-bold.svg#GothamRoundedBold') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamRoundedBook';
+    src: url('../fonts/gothamrnd-book.eot');
+    src: url('../fonts/gothamrnd-book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothamrnd-book.woff') format('woff'),
+         url('../fonts/gothamrnd-book.ttf') format('truetype'),
+         url('../fonts/gothamrnd-book.svg#GothamRoundedBook') format('svg');
+}
+@font-face {
+    font-family: 'GothamRoundedMedium';
+    src: url('../fonts/gothamrnd-medium.eot');
+    src: url('../fonts/gothamrnd-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothamrnd-medium.woff') format('woff'),
+         url('../fonts/gothamrnd-medium.ttf') format('truetype'),
+         url('../fonts/gothamrnd-medium.svg#GothamRoundedMedium') format('svg');
+}
+@font-face {
+    font-family: 'GothamRoundedLight';
+    src: url('../fonts/gothamrnd-light.eot');
+    src: url('../fonts/gothamrnd-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothamrnd-light.woff') format('woff'),
+         url('../fonts/gothamrnd-light.ttf') format('truetype'),
+         url('../fonts/gothamrnd-light.svg#GothamRoundedLight') format('svg');
+}
+
+.font-family-primary {
+  font-family: "GothamRoundedBook", sans-serif !important;
+}
+
+.font-family-google {
+  font-family: "Google Sans", sans-serif !important;
+}
+
+.font-family-roboto {
+  font-family: "Google Sans", sans-serif !important;
+}
+
+.underlineload {
+  color: #4893c1 !important;
+    display: inline-block;
+    position: relative;
+    top: -100;
+  }
+
+  .underlineload:hover {
+    color: #4893c1 !important;
+  }
+
+  .preloader-2 div {
+    position: relative !important;
+    width: 50px !important;
+    height: 50px !important;
+    content: url("../images/spinner.gif") !important;
+  }
+
+.underlineload:hover:after {
+background: #4893c1 !important;
+width:100%;
+right: 0;
+}
+
+.underlineload:after {
+  background: none repeat scroll 0 0 transparent;
+  color: #4893c1 !important;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  background: #000;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  width: 0;
+}
+
+#HASH {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.flex-wrapper {
+  display: flex !important;
+  min-height: 100vh !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.img45x45 {
+
+  width: 45px !important;
+  height: 45px !important;
+
+}
+
+.greyscale {
+
+  -webkit-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+    opacity: 0.15 !important;
+    filter: alpha(opacity=15) !important;
+
+}
+
+.img60x60 {
+
+  width: 60px !important;
+  height: 60px !important;
+
+}
+
+.categorypill {
+
+border:1px;
+border-radius: 200px;
+border-style:solid;
+border-color:#efefef;
+padding: 0px;
+padding-left: 13px;
+padding-right: 13px;
+
+}
+
+.paddingtop {
+
+padding-top: 10px !important;
+padding-left: 0px !important;
+
+}
+
+.collapsible {
+    background-color: #f0f0f0 !important;
+    padding-left: 35px !important;
+    padding-top: 35px !important;
+}
+
+.greybackground {
+    background-color: #f0f0f0;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 100%;
+    border: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+
+.collapsible::after {
+    font-family: "FontAwesome" !important;
+    font-size: 20px;
+    content: "\f067";
+    float: right !important;
+    color: #606060;
+    transform: translate(190%,-300%);
+}
+
+
+.collapsible.active {
+  background-color: #f0f0f0;
+  border: 0px;
+  padding-left: 35px;
+  padding-right: 75px;
+  padding-top: 35px;
+  padding-bottom: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.collapsible.active::after {
+    font-family: "FontAwesome" !important;
+    font-size: 20px !important;
+    content: "\f068" !important;
+}
+
+.collapsible:hover {
+  background-color: #f0f0f0 !important;
+}
+
+.collapsible:hover::after {
+color: #000000 !important;
+}
+
+.content {
+  padding-left: 35px !important;
+  background-color: #f0f0f0 !important;
+}
+
+.bg-white-09 {
+  background: rgba(238, 238, 238, 0.9) !important;
+}
+
+.text-grey {
+  color: #efefef !important;
+}
+
+.padding-right-35 {
+  padding-right: 35px;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
+}
+
+html, body {
+  speak: none !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+body {
+  min-height: 100% !important;
+}
+
+a {
+  color: #141414 !important;
+  -webkit-transition: linear 0.1s !important;
+  transition: linear 0.1s !important;
+}
+
+.contact {
+  color: #282828 !important;
+}
+
+.contact:hover {
+  color: #4893c1 !important;
+}
+
+a:hover {
+  color: #4893c1 !important;
+}
+
+.breadcrumb .breadcrumb-item {
+  font: 400 13px "google sans", sans-serif !important;
+}
+
+.btn, .button, .text-btn, .text-btn-2, .text-btn-3 {
+  font: 400 13px "google sans", sans-serif !important;
+}
+
+.button-font-2 {
+  font: 400 15px "google sans", sans-serif;
+}
+
+.grey-font-color {
+  color: #282828 !important;
+}
+
+.blue-font-color {
+  color: #4893c1 !important;
+}
+
+hr {
+  background: rgba(238, 238, 238, 0.9) !important;
+}
+
+.dropdown .dropdown-menu .dropdown-item, .btn-group .dropdown-menu .dropdown-item {
+  font: 300 15px "GothamRoundedBook", sans-serif !important;
+}
+
+input,
+textarea {
+  font: 300 16px "GothamRoundedBook", sans-serif !important;
+}
+
+.card {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border: 0px;
+  background: rgba(0, 0, 0, 0);
+    }
+    .card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .card:hover .img-top {
+        display: inline;
+    }
+
+.navbar {
+  height: 60px !important;
+}
+
+.navbar .nav .nav-item .nav-link {
+  font: 400 13px "google sans", sans-serif !important;
+}
+
+.navbar .nav .nav-item .dropdown-menu {
+  top: 60px !important;
+}
+
+@media (min-width: 992px) {.navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu,
+  .navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu .sub-dropdown .sub-dropdown-menu {
+    background: #f0f0f0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .nav .nav-item .nav-link {
+    line-height: 60px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .container, .navbar .container-fluid {
+    height: 60px !important;
+  }
+  .navbar .nav {
+    top: 60px !important;
+    -webkit-box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0) !important;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0) !important;
+  }
+  .navbar .dropdown-grey {
+    background: rgba(243, 243, 243, 0.9) !important;
+  }
+}
+
+.navbar-placeholder-padding {
+  padding-top: 60px !important;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav .nav-item.nav-megadropdown .mega-menu {
+    top: 60px !important;
+    -webkit-box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0) !important;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0) !important;
+  }
+}
+
+.navbar .nav.dropdown-grey .nav-megadropdown .mega-menu {
+  background: #f0f0f0 !important;
+}
+
+body {
+  color: #646464;
+  font: 300 16px "GothamRoundedBook", sans-serif !important;
+  letter-spacing: 0;
+}
+
+h1, h2, h3, h5, h6 {
+  font-family: "GothamRoundedBold", sans-serif !important;
+  font-weight: normal !important;
+}
+
+h5 {
+line-height: 19px !important;
+}
+
+h5 {
+line-height: 23px !important;
+}
+
+h3 {
+line-height: 31px !important;
+}
+
+h2 {
+line-height: 35px !important;
+}
+
+h1 {
+line-height: 43px !important;
+}
+
+h4 {
+  font-size: 24px !important;
+  line-height: 27px !important;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+p {
+  font-family: "google sans", sans-serif !important;
+  font-weight: 100 !important;
+}
+
+.heading-uppercase {
+  font-weight: normal !important;
+  font-size: 13px !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+}
+
+.home-blog-post-wrapper div[class^="col-"] .home-blog-post-img .home-blog-post-category, .home-blog-post-wrapper div[class*=" col-"] .home-blog-post-img .home-blog-post-category {
+  font: 400 13px "google sans", sans-serif !important;
+}
+
+.filter ul li {
+  font: 400 13px "google sans", sans-serif !important;
+}
+
+.prices-box .price span {
+  font: 300 14px "google sans", sans-serif !important;
+}
+
+.prices-box .price h1 span, .prices-box .price h2 span, .prices-box .price h3 span, .prices-box .price h4 span, .prices-box .price h5 span, .prices-box .price h6 span {
+  font: 300 14px "google sans", sans-serif !important;
+}
+
+.sidebar-nav-content .sidebar-menu li a {
+  font: 400 13px "google sans", sans-serif !important;
+}
+
+.shop-sidebar .shop-sidebar-category li a span {
+  font: 400 13px "google sans", sans-serif !important;
+}
+
+.shop-sidebar .shop-sidebar-size li a span {
+  font: 400 13px "google sans", sans-serif !important;
+}
+
+.payment-detail-box ul li span {
+  font: 400 13px "google sans", sans-serif !important;
+}
+
+.payment-detail-box ul li .payment-detail-product-quantity {
+  font: 300 16px "google sans", sans-serif !important;
+}
+
+.filter {
+  margin-bottom: 0px !important;
+}
