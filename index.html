@@ -72,7 +72,6 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7 mb-4 mb-lg-0">
-                        <p class="pill-badge mb-3">noein</p>
                         <h1 class="mb-3">A space to think.</h1>
                         <p class="mb-3">At Noein, you step into a quiet space of reflection — a place to slow down, explore your thoughts, and rediscover what feels true for you.</p>
                         <p class="mb-3">It’s a calm space for honest conversation, thoughtful insight, and gentle transformation. Coaching here isn’t about receiving answers; it’s about reconnecting with yourself and uncovering what’s already within you.</p>
@@ -102,7 +101,6 @@
                 <div class="row align-items-start col-spacing-30">
                     <div class="col-lg-6">
                         <div class="content-card h-100">
-                            <p class="pill-badge mb-3">Work with me</p>
                             <h2 class="mb-3">Practical, paced, and held with presence.</h2>
                             <p class="mb-3">Sessions are tailored to your needs and designed to foster lasting insight.</p>
                             <ul class="list-checks mb-4">
@@ -117,7 +115,6 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="content-card h-100">
-                            <p class="pill-badge mb-3">Who I coach</p>
                             <h3 class="mb-3">For people ready to be seen and move forward.</h3>
                             <ul class="list-checks mb-0">
                                 <li>People who feel stuck and want a way forward.</li>
@@ -136,7 +133,6 @@
                 <div class="row col-spacing-30 align-items-start">
                     <div class="col-lg-6">
                         <div class="content-card h-100">
-                            <p class="pill-badge mb-3">About Noein</p>
                             <h3 class="mb-3">A practice built on inner clarity.</h3>
                             <p class="mb-3">Noein is drawn from the ancient Greek word noein (νοεῖν): to perceive with the mind — an inward clarity that arises when thinking turns into insight. This practice is less about supplying answers and more about creating the space where your own understanding can be found.</p>
                             <p class="mb-4">Trained as an architect and then as a Transformative Coach, I know what it feels like to follow what I thought I had to do, silencing my own voice until I chose otherwise. That experience informs my work: I hold a practical, caring, and persistent presence that helps others find and live their truth.</p>
@@ -145,7 +141,6 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="content-card h-100">
-                            <p class="pill-badge mb-3">My style</p>
                             <h4 class="mb-3">A warm place to rest, to see, and to move forward.</h4>
                             <ul class="list-checks mb-4">
                                 <li>Curious, soft, and explorative.</li>
@@ -167,7 +162,6 @@
                 <div class="content-card">
                     <div class="row mb-4 align-items-center">
                         <div class="col-lg-8">
-                            <p class="pill-badge mb-3">Client words</p>
                             <h3 class="mb-0">Gentle, grounded reflections from recent sessions.</h3>
                         </div>
                     </div>
@@ -192,7 +186,6 @@
         <section id="contact" class="section-spacer">
             <div class="container">
                 <div class="content-card text-center">
-                    <p class="pill-badge mb-3">Contact</p>
                     <h3 class="mb-3">If Noein feels like the right space, let’s begin with a short conversation.</h3>
                     <p class="mb-4">Email: <a href="mailto:hello@noein.co.uk">hello@noein.co.uk</a><br>Sessions: Online via Microsoft Teams — mainly evenings &amp; weekends.</p>
                     <a class="btn accent-btn mr-3 mb-2" href="mailto:hello@noein.co.uk">Send an email</a>
@@ -260,21 +253,27 @@
 <!-- Scripts -->
 <script src="assets/js/functions.js"></script>
 <script>
-    $(document).ready(function(){
-        $('#reviewCarousel').owlCarousel({
-            items: 1,
-            loop: true,
-            margin: 20,
-            autoplay: true,
-            autoplayTimeout: 6000,
-            autoplayHoverPause: true,
-            nav: false,
-            dots: true,
-            responsive: {
-                768: { items: 2 },
-                1200: { items: 3 }
-            }
-        });
+    jQuery(function($){
+        var $reviewCarousel = $('#reviewCarousel');
+
+        if ($reviewCarousel.length && $.fn.owlCarousel) {
+            $reviewCarousel.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 20,
+                autoplay: true,
+                autoplayTimeout: 6000,
+                autoplayHoverPause: true,
+                nav: false,
+                dots: true,
+                autoHeight: true,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    1200: { items: 3 }
+                }
+            });
+        }
     });
 </script>
 </body>
