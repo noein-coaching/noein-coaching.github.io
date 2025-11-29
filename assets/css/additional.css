@@ -359,6 +359,74 @@ textarea {
   background: #f0f0f0 !important;
 }
 
+/* Layout updates */
+.page-bg {
+  background: #f5f7fa;
+}
+
+.header-white,
+.footer-white {
+  background: #ffffff !important;
+}
+
+.content-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 14px 40px rgba(72, 147, 193, 0.08);
+  padding: 32px;
+}
+
+.section-spacer {
+  padding: 64px 0;
+}
+
+.accent-text {
+  color: #4893c1;
+}
+
+.accent-btn {
+  background: #4893c1;
+  border-color: #4893c1;
+  color: #ffffff !important;
+}
+
+.accent-btn:hover,
+.accent-btn:focus {
+  background: #3a7aa5;
+  border-color: #3a7aa5;
+  color: #ffffff !important;
+}
+
+.pill-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #e8f2f9;
+  color: #282828;
+  font: 500 13px "google sans", sans-serif !important;
+}
+
+.list-checks {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list-checks li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 10px;
+}
+
+.list-checks li:before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  color: #4893c1;
+}
+
 body {
   color: #646464;
   font: 300 16px "GothamRoundedBook", sans-serif !important;
