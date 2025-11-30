@@ -400,17 +400,41 @@ textarea {
   height: auto;
   border: 0px;
   background: rgba(0, 0, 0, 0);
-    }
-    .card .img-top {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    }
-    .card:hover .img-top {
-        display: inline;
-    }
+}
+
+.card .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.card:hover .img-top {
+  display: inline;
+}
+
+/* Navbar logo hover swap */
+.navbar .navbar-brand .card {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .navbar-brand .card img:first-child {
+  display: block;
+}
+
+.navbar .navbar-brand .card .img-top {
+  display: none;
+}
+
+.navbar .navbar-brand .card:hover .img-top {
+  display: block;
+}
+
+.navbar .navbar-brand .card:hover img:first-child {
+  visibility: hidden;
+}
 
 /* Navbar logo hover swap */
 .navbar .navbar-brand .card {
