@@ -63,9 +63,23 @@
 
   .preloader-2 div {
     position: relative !important;
-    width: 50px !important;
-    height: 50px !important;
-    content: url("../images/spinner.gif") !important;
+    width: auto !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .preloader-2 .preloader-message {
+    font-family: "Google Sans", sans-serif !important;
+    font-size: 1.125rem !important;
+    letter-spacing: 0.08em !important;
+    text-transform: lowercase !important;
+    color: #282828 !important;
+    padding: 0.75rem 1.5rem !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 999px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
   }
 
 .underlineload:hover:after {
