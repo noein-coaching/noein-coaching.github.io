@@ -412,6 +412,20 @@ textarea {
         display: inline;
     }
 
+/* Navbar logo hover swap */
+.navbar .navbar-brand .card {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .navbar-brand .card img {
+  display: block;
+}
+
+.navbar .navbar-brand .card:hover img:first-child {
+  visibility: hidden;
+}
+
 .navbar {
   height: 60px !important;
 }
