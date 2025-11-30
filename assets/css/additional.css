@@ -225,12 +225,71 @@ padding-left: 0px !important;
   height: 100%;
 }
 
+.hero-tagline-box {
+  background: #f7f7f7;
+  border-radius: 16px;
+  padding: 28px 32px;
+  border: none;
+}
+
+.hero-tagline-line {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.tagline-highlight {
+  color: #4893c1;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.hero-tagline-image {
+  max-width: 320px;
+}
+
+@media (min-width: 992px) {
+  .hero-tagline-line {
+    font-size: 1.4rem;
+  }
+
+  .hero-tagline-image {
+    max-width: 360px;
+  }
+}
+
 #reviewCarousel .owl-dots .owl-dot span {
   background: #c0c0c0;
 }
 
 #reviewCarousel .owl-dots .owl-dot.active span {
   background: #4893c1;
+}
+
+.testimonial-carousel .owl-dots .owl-dot span {
+  background: #c0c0c0;
+}
+
+.testimonial-carousel .owl-dots .owl-dot.active span {
+  background: #4893c1;
+}
+
+.testimonial-carousel-card {
+  background: #f7f7f7;
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  height: 100%;
+}
+
+.testimonial-headshot-placeholder {
+  width: 68px;
+  height: 68px;
+  background: #d9d9d9;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
 
 .collapsible:hover::after {
