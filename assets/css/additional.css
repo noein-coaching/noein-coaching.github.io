@@ -214,8 +214,16 @@ padding-left: 0px !important;
 }
 
 /* Logo sizing */
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
+}
+
 .navbar .navbar-brand img {
   max-height: 60px;
+  display: block;
+  filter: none !important;
 }
 
 /* Review carousel tweaks */
@@ -225,12 +233,76 @@ padding-left: 0px !important;
   height: 100%;
 }
 
+.hero-tagline-box {
+  background: #f7f7f7;
+  border-radius: 16px;
+  padding: 28px 32px;
+  border: none;
+}
+
+.hero-tagline-copy {
+  width: 100%;
+}
+
+.hero-tagline-line {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.tagline-highlight {
+  color: #4893c1;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.hero-tagline-image {
+  max-width: 320px;
+  filter: grayscale(1) brightness(0.25) contrast(1.1);
+}
+
+@media (min-width: 992px) {
+  .hero-tagline-line {
+    font-size: 1.4rem;
+  }
+
+  .hero-tagline-image {
+    max-width: 360px;
+  }
+}
+
 #reviewCarousel .owl-dots .owl-dot span {
   background: #c0c0c0;
 }
 
 #reviewCarousel .owl-dots .owl-dot.active span {
   background: #4893c1;
+}
+
+.testimonial-carousel .owl-dots .owl-dot span {
+  background: #c0c0c0;
+}
+
+.testimonial-carousel .owl-dots .owl-dot.active span {
+  background: #4893c1;
+}
+
+.testimonial-carousel-card {
+  background: #f7f7f7;
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  height: 100%;
+}
+
+.testimonial-headshot-placeholder {
+  width: 68px;
+  height: 68px;
+  background: #d9d9d9;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
 
 .collapsible:hover::after {
@@ -340,6 +412,20 @@ textarea {
         display: inline;
     }
 
+/* Navbar logo hover swap */
+.navbar .navbar-brand .card {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .navbar-brand .card img {
+  display: block;
+}
+
+.navbar .navbar-brand .card:hover img:first-child {
+  visibility: hidden;
+}
+
 .navbar {
   height: 60px !important;
 }
@@ -412,17 +498,29 @@ textarea {
 }
 
 .section-spacer {
-  padding: 64px 0;
+  padding: 60px 0;
+}
+
+.section-hero-intro {
+  padding-top: 0;
 }
 
 .accent-text {
   color: #4893c1;
 }
 
+.text-primary {
+  color: #4893c1 !important;
+}
+
 .accent-btn {
   background: #4893c1;
   border-color: #4893c1;
   color: #ffffff !important;
+}
+
+.btn {
+  border-radius: 999px;
 }
 
 .accent-btn:hover,
