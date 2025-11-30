@@ -214,8 +214,15 @@ padding-left: 0px !important;
 }
 
 /* Logo sizing */
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
+}
+
 .navbar .navbar-brand img {
   max-height: 60px;
+  display: block;
 }
 
 /* Review carousel tweaks */
@@ -232,6 +239,10 @@ padding-left: 0px !important;
   border: none;
 }
 
+.hero-tagline-copy {
+  width: 100%;
+}
+
 .hero-tagline-line {
   font-size: 1.25rem;
   line-height: 1.6;
@@ -246,6 +257,7 @@ padding-left: 0px !important;
 
 .hero-tagline-image {
   max-width: 320px;
+  filter: grayscale(1) brightness(0.25) contrast(1.1);
 }
 
 @media (min-width: 992px) {
@@ -471,7 +483,11 @@ textarea {
 }
 
 .section-spacer {
-  padding: 64px 0;
+  padding: 60px 0;
+}
+
+.section-hero-intro {
+  padding-top: 60px;
 }
 
 .accent-text {
@@ -482,6 +498,10 @@ textarea {
   background: #4893c1;
   border-color: #4893c1;
   color: #ffffff !important;
+}
+
+.btn {
+  border-radius: 999px;
 }
 
 .accent-btn:hover,
