@@ -15,7 +15,7 @@ $(function() {
     $body.append($("<div class='preloader preloader-1'><div><span></span></div></div>"));
   }
   else if ($body.attr("data-preloader") === "2") {
-    $body.append($("<div class='preloader preloader-2'><div><svg class='loader-circular' viewBox='25 25 50 50'><circle class='loader-path' cx='50' cy='50' r='20' fill='none' stroke-width='2' stroke-miterlimit='10'/></svg></div></div>"));
+    $body.append($("<div class='preloader preloader-2'><div class='preloader-message'>a place to think</div></div>"));
   }
   else if ($body.attr("data-preloader") === "3") {
     $body.append($("<div class='preloader preloader-3'><div><span></span><span></span><span></span></div></div>"));
