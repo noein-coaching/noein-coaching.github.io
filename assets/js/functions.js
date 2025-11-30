@@ -15,7 +15,7 @@ $(function() {
     $body.append($("<div class='preloader preloader-1'><div><span></span></div></div>"));
   }
   else if ($body.attr("data-preloader") === "2") {
-    $body.append($("<div class='preloader preloader-2'><div class='preloader-message'>a place to think</div></div>"));
+    $body.append($("<div class='preloader preloader-2'><div class='preloader-message'>A space to think</div></div>"));
   }
   else if ($body.attr("data-preloader") === "3") {
     $body.append($("<div class='preloader preloader-3'><div><span></span><span></span><span></span></div></div>"));
@@ -210,8 +210,6 @@ $(function() {
         navbarSticky.removeClass("navbar-shrink");
       }
     });
-    // Navbar Sticky Placeholder
-    $("<div class='navbar-placeholder'></div>").insertAfter(".navbar-sticky");
   }
 
 
