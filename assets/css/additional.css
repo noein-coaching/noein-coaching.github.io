@@ -576,12 +576,17 @@ main.flex-fill {
   height: 0;
 }
 
+
 .section-spacer {
-  padding: 0;
+  padding: var(--vertical-column-gap) 0;
 }
 
-.flex-fill > .section-spacer + .section-spacer {
+.flex-fill > .section-spacer {
   margin-top: var(--vertical-column-gap);
+}
+
+.flex-fill > .section-spacer:first-of-type {
+  margin-top: 0;
 }
 
 .row.col-spacing-30 {
