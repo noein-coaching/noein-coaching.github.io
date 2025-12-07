@@ -576,8 +576,9 @@ main.flex-fill {
   height: 0;
 }
 
+
 .section-spacer {
-  padding: 0;
+  padding: var(--vertical-column-gap) 0;
 }
 
 .flex-fill > .section-spacer {
