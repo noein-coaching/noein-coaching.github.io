@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Varela+Round:100,300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i");
+@import url("../fonts/stylesheet.css");
 
 @font-face {
     font-family: 'GothamRoundedBold';
@@ -519,6 +520,9 @@ textarea {
   border-radius: 12px;
   box-shadow: 0 14px 40px rgba(72, 147, 193, 0.08);
   padding: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 main.flex-fill {
@@ -535,6 +539,12 @@ main.flex-fill {
 
 .section-hero-intro {
   padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .row.align-items-start {
+    align-items: stretch !important;
+  }
 }
 
 .accent-text {
@@ -594,13 +604,16 @@ main.flex-fill {
 
 body {
   color: #646464;
-  font: 300 16px "GothamRoundedBook", sans-serif !important;
+  font-family: "FigtreeLight", sans-serif !important;
+  font-weight: 300;
+  font-size: 16px;
   letter-spacing: 0;
 }
 
-h1, h2, h3, h5, h6 {
-  font-family: "GothamRoundedBold", sans-serif !important;
-  font-weight: normal !important;
+h1, h2, h3, h4, h5, h6,
+.hero-tagline-line,
+.heading-uppercase {
+  font-family: "GystRegular", sans-serif !important;
 }
 
 h5 {
@@ -633,8 +646,12 @@ h4 {
 }
 
 p {
-  font-family: "google sans", sans-serif !important;
-  font-weight: 100 !important;
+  font-family: "FigtreeLight", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+body, p, span, li, a, button, input, textarea, select, label {
+  font-family: "FigtreeLight", sans-serif !important;
 }
 
 .heading-uppercase {
