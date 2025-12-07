@@ -31,3 +31,21 @@
          url('gothamrnd-light.ttf') format('truetype'),
          url('gothamrnd-light.svg#GothamRoundedLight') format('svg');
 }
+
+@font-face {
+    font-family: 'GystRegular';
+    src: url('gyst-regular.eot');
+    src: url('gyst-regular.eot') format('embedded-opentype'),
+         url('gyst-regular.woff') format('woff'),
+         url('gyst-regular.ttf') format('truetype'),
+         url('gyst-regular.svg#GystRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'FigtreeLight';
+    src: url('figtreelight.eot');
+    src: url('figtreelight.eot') format('embedded-opentype'),
+         url('figtreelight.woff') format('woff'),
+         url('figtreelight.ttf') format('truetype'),
+         url('figtreelight.svg#FigtreeLight') format('svg');
+}
