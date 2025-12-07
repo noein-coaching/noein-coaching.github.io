@@ -351,7 +351,7 @@ a {
 }
 
 :root {
-  --vertical-section-spacing: 50px;
+  --page-edge-buffer: 50px;
   --vertical-column-gap: 30px;
 }
 
@@ -539,7 +539,22 @@ textarea {
 }
 
 main.flex-fill {
-  padding: 0;
+  padding: var(--page-edge-buffer) 0;
+}
+
+.navbar .navbar-brand .card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  position: relative;
+  top: -7px;
+}
+
+.navbar .nav-toggle-btn {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .navbar .navbar-brand .card {
@@ -562,23 +577,11 @@ main.flex-fill {
 }
 
 .section-spacer {
-  padding: var(--vertical-section-spacing) 0;
-}
-
-.flex-fill > .section-spacer:first-of-type {
-  margin-top: var(--vertical-section-spacing);
+  padding: 0;
 }
 
 .flex-fill > .section-spacer + .section-spacer {
-  margin-top: var(--vertical-section-spacing);
-}
-
-.flex-fill > .section-spacer:last-of-type {
-  margin-bottom: var(--vertical-section-spacing);
-}
-
-.section-hero-intro {
-  padding-top: var(--vertical-section-spacing);
+  margin-top: var(--vertical-column-gap);
 }
 
 .row.col-spacing-30 {
