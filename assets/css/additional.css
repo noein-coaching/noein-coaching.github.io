@@ -521,12 +521,20 @@ textarea {
   padding: 32px;
 }
 
+main.flex-fill {
+  padding: 0;
+}
+
+.navbar-placeholder {
+  height: 0;
+}
+
 .section-spacer {
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
 .section-hero-intro {
-  padding-top: 0;
+  padding-top: 50px;
 }
 
 .accent-text {
