@@ -557,6 +557,21 @@ main.flex-fill {
   padding: 10px;
 }
 
+.navbar .navbar-brand .card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  position: relative;
+  top: -7px;
+}
+
+.navbar .nav-toggle-btn {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
 .navbar-placeholder {
   height: 0;
 }
