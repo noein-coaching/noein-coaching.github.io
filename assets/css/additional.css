@@ -580,8 +580,12 @@ main.flex-fill {
   padding: 0;
 }
 
-.flex-fill > .section-spacer + .section-spacer {
+.flex-fill > .section-spacer {
   margin-top: var(--vertical-column-gap);
+}
+
+.flex-fill > .section-spacer:first-of-type {
+  margin-top: 0;
 }
 
 .row.col-spacing-30 {
