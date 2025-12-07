@@ -540,6 +540,9 @@ textarea {
 
 main.flex-fill {
   padding: var(--page-edge-buffer) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--vertical-column-gap);
 }
 
 .navbar .navbar-brand .card {
@@ -581,15 +584,11 @@ main.flex-fill {
   padding: var(--vertical-column-gap) 0;
 }
 
-.flex-fill > .section-spacer {
-  margin-top: var(--vertical-column-gap);
-}
-
-.flex-fill > .section-spacer:first-of-type {
-  margin-top: 0;
-}
-
 .row.col-spacing-30 {
+  row-gap: var(--vertical-column-gap);
+}
+
+.section-spacer .row {
   row-gap: var(--vertical-column-gap);
 }
 
