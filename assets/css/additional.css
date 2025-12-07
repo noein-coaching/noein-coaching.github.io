@@ -565,6 +565,18 @@ main.flex-fill {
   padding: var(--vertical-section-spacing) 0;
 }
 
+.flex-fill > .section-spacer:first-of-type {
+  margin-top: var(--vertical-section-spacing);
+}
+
+.flex-fill > .section-spacer + .section-spacer {
+  margin-top: var(--vertical-section-spacing);
+}
+
+.flex-fill > .section-spacer:last-of-type {
+  margin-bottom: var(--vertical-section-spacing);
+}
+
 .section-hero-intro {
   padding-top: var(--vertical-section-spacing);
 }
