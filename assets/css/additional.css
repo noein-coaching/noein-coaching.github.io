@@ -351,7 +351,7 @@ a {
 }
 
 :root {
-  --vertical-section-spacing: 15px;
+  --page-edge-buffer: 50px;
   --vertical-column-gap: 30px;
 }
 
@@ -534,12 +534,27 @@ textarea {
 }
 
 .content-card.content-card--translucent {
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 14px 40px rgba(72, 147, 193, 0.04);
+  background: transparent;
+  box-shadow: none;
 }
 
 main.flex-fill {
-  padding: 0;
+  padding: var(--page-edge-buffer) 0;
+}
+
+.navbar .navbar-brand .card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  position: relative;
+  top: -7px;
+}
+
+.navbar .nav-toggle-btn {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .navbar-placeholder {
@@ -547,11 +562,11 @@ main.flex-fill {
 }
 
 .section-spacer {
-  padding: var(--vertical-section-spacing) 0;
+  padding: 0;
 }
 
-.section-hero-intro {
-  padding-top: var(--vertical-section-spacing);
+.flex-fill > .section-spacer + .section-spacer {
+  margin-top: var(--vertical-column-gap);
 }
 
 .row.col-spacing-30 {
@@ -577,6 +592,12 @@ main.flex-fill {
   background: transparent;
   box-shadow: none;
   border-radius: 0;
+}
+
+.headshot-card img {
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
