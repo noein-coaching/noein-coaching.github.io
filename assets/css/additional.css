@@ -678,7 +678,7 @@ main.flex-fill {
 }
 
 .list-checks li:before {
-  content: "\f00c";
+  content: "\2022";
   font-family: "Font Awesome 5 Pro";
   font-weight: 600;
   position: absolute;
