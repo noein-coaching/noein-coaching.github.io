@@ -240,7 +240,7 @@ padding-left: 0px !important;
 }
 
 .testimonial-carousel-card {
-  background: #f7f7f7;
+  background: #f8f3f1;
   border-radius: 14px;
   padding: 22px;
   display: flex;
@@ -267,7 +267,7 @@ color: #000000 !important;
 }
 
 .bg-white-09 {
-  background: rgba(238, 238, 238, 0.9) !important;
+  background: rgba(251, 238, 238, 0.9) !important;
 }
 
 .text-grey {
@@ -424,7 +424,7 @@ textarea {
 
 @media (min-width: 992px) {.navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu,
   .navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu .sub-dropdown .sub-dropdown-menu {
-    background: #f0f0f0 !important;
+    background: #fff !important;
   }
 }
 
@@ -444,7 +444,7 @@ textarea {
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0) !important;
   }
   .navbar .dropdown-grey {
-    background: rgba(243, 243, 243, 0.9) !important;
+    background: rgba(251, 246, 245, 0.75) !important;
   }
 }
 
@@ -475,7 +475,7 @@ textarea {
 }
 
 .content-card {
-  background: #ffffff;
+  background: #FBF6F5;
   border-radius: 12px;
   box-shadow: 0 14px 40px rgba(72, 147, 193, 0.08);
   padding: 32px;
