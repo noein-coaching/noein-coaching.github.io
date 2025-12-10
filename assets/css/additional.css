@@ -52,14 +52,14 @@
 }
 
 .underlineload {
-  color: #0D7282 !important;
+  color: #820d0d !important;
     display: inline-block;
     position: relative;
     top: -100;
   }
 
   .underlineload:hover {
-    color: #0D7282 !important;
+    color: #820d0d !important;
   }
 
   .preloader-2 div {
@@ -85,14 +85,14 @@
   }
 
 .underlineload:hover:after {
-background: #0D7282 !important;
+background: #820d0d !important;
 width:100%;
 right: 0;
 }
 
 .underlineload:after {
   background: none repeat scroll 0 0 transparent;
-  color: #0D7282 !important;
+  color: #820d0d !important;
   bottom: 0;
   content: "";
   display: block;
@@ -252,7 +252,7 @@ padding-left: 0px !important;
 }
 
 .tagline-highlight {
-  color: #0D7282;
+  color: #820d0d;
   font-style: italic;
   font-weight: 600;
 }
@@ -277,7 +277,7 @@ padding-left: 0px !important;
 }
 
 #reviewCarousel .owl-dots .owl-dot.active span {
-  background: #0D7282;
+  background: #820d0d;
 }
 
 .testimonial-carousel .owl-dots .owl-dot span {
@@ -285,7 +285,7 @@ padding-left: 0px !important;
 }
 
 .testimonial-carousel .owl-dots .owl-dot.active span {
-  background: #0D7282;
+  background: #820d0d;
 }
 
 .testimonial-carousel-card {
@@ -360,11 +360,11 @@ a {
 }
 
 .contact:hover {
-  color: #0D7282 !important;
+  color: #820d0d !important;
 }
 
 a:hover {
-  color: #0D7282 !important;
+  color: #820d0d !important;
 }
 
 .breadcrumb .breadcrumb-item {
@@ -387,7 +387,7 @@ a:hover {
 }
 
 .blue-font-color {
-  color: #0D7282 !important;
+  color: #820d0d !important;
 }
 
 hr {
@@ -515,7 +515,7 @@ textarea {
 
 /* Layout updates */
 .page-bg {
-  background: #f8ffff;
+  background: #f8f3f1;
 }
 
 .header-white,
@@ -626,16 +626,16 @@ main.flex-fill {
 }
 
 .accent-text {
-  color: #0D7282;
+  color: #820d0d;
 }
 
 .text-primary {
-  color: #0D7282 !important;
+  color: #820d0d !important;
 }
 
 .accent-btn {
-  background: #0D7282;
-  border-color: #0D7282;
+  background: #820d0d;
+  border-color: #820d0d;
   color: #ffffff !important;
 }
 
@@ -651,8 +651,8 @@ main.flex-fill {
 
 .accent-btn:hover,
 .accent-btn:focus {
-  background: #09525D;
-  border-color: #09525D;
+  background: #5D0909;
+  border-color: #5D0909;
   color: #ffffff !important;
 }
 
@@ -683,7 +683,7 @@ main.flex-fill {
   font-weight: 600;
   position: absolute;
   left: 0;
-  color: #0D7282;
+  color: #820d0d;
 }
 
 body {
