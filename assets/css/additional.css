@@ -653,6 +653,7 @@ h1, h2, h3, h4, h5, h6,
 .navbar .nav-link,
 .navbar .nav-link p,
 .footer-white h5,
+.footer-white h3,
 .btn,
 .button,
 .text-btn,
@@ -663,28 +664,20 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h5 {
-line-height: 19px !important;
-}
-
-h5 {
-line-height: 23px !important;
+  line-height: 23px !important;
 }
 
 h3 {
-line-height: 31px !important;
+  line-height: 23px !important;
 }
 
 h2 {
-line-height: 35px !important;
+  font-size: 24px !important;
+  line-height: 27px !important;
 }
 
 h1 {
-line-height: 43px !important;
-}
-
-h4 {
-  font-size: 24px !important;
-  line-height: 27px !important;
+  line-height: 35px !important;
 }
 
 .align-left {
