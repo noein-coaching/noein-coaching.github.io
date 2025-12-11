@@ -464,7 +464,6 @@ textarea {
   background: #f0f0f0 !important;
 }
 
-/* Layout updates */
 .page-bg {
   background: #f8f3f1;
 }
@@ -475,7 +474,7 @@ textarea {
 }
 
 .content-card {
-  background: #fffefe;
+  background: #fffcfb;
   border-radius: 12px;
   box-shadow: 0 14px 40px rgba(72, 147, 193, 0.08);
   padding: 32px;
