@@ -739,3 +739,17 @@ body, p, span, li, a, button, input, textarea, select, label {
 .filter {
   margin-bottom: 0px !important;
 }
+
+.hero-image {
+  width: 100%;
+  height: 80vh; /* hero height */
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.9) contrast(0.95);
+}
