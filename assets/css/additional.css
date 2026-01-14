@@ -844,3 +844,47 @@ padding-bottom: 6rem;
   font-size: 0.9rem;
   opacity: 0.8;
 }
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.8) contrast(0.95);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.hero-overlay blockquote {
+  max-width: 720px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.hero-overlay blockquote p {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+}
+
+.hero-overlay blockquote footer {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  letter-spacing: 0.05em;
+}
