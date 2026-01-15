@@ -888,3 +888,14 @@ padding-bottom: 6rem;
   opacity: 0.8;
   letter-spacing: 0.05em;
 }
+.hero-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-intro {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+    opacity: 0.85;
+}
