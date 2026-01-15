@@ -905,3 +905,6 @@ padding-bottom: 6rem;
 .pt-0 {
     padding-top: 0 !important;
 }
+.section-hero-intro h1 {
+    margin-bottom: 12px;
+}
