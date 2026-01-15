@@ -900,7 +900,7 @@ padding-bottom: 6rem;
     opacity: 0.85;
 }
 .pb-0 {
-    padding-bottom: 0;
+    padding-bottom: -10;
 }
 .pt-0 {
     padding-top: 0 !important;
