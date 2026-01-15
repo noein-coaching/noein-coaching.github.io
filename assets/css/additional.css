@@ -899,3 +899,6 @@ padding-bottom: 6rem;
     font-size: 1rem;
     opacity: 0.85;
 }
+.pb-0 {
+    padding-bottom: 0;
+}
