@@ -908,3 +908,6 @@ padding-bottom: 6rem;
 .section-hero-intro h1 {
     margin-bottom: 12px;
 }
+.content-card {
+    margin-top: -80px;
+}
