@@ -814,19 +814,6 @@ body, p, span, li, a, button, input, textarea, select, label {
   opacity: 0.85;
 }
 
-/* ================================
-   FIX GLOBAL SPACING ISSUE
-================================ */
-
-/* REMOVE the global gap that was forcing space everywhere */
-main.flex-fill {
-  gap: 0 !important;
-}
-
-/* Restore spacing between normal sections */
-.section-spacer {
-  margin-bottom: var(--vertical-column-gap);
-}
 
 /* ================================
    TIGHT "A SPACE TO..." PAIRS
@@ -868,23 +855,7 @@ main.flex-fill {
 .section-hero-content.section-spacer {
   padding-top: 0 !important;
 }
-/* ======================================
-   REMOVE GAP BETWEEN HERO TITLE + CARD
-====================================== */
 
-.section-hero-intro.section-spacer {
-  padding-bottom: 0 !important;
-}
-
-.section-hero-content.section-spacer {
-  padding-top: 0 !important;
-}
-/* Tighten title-card pairs */
-.section-hero-intro{ padding-bottom:0 !important; margin-bottom:0 !important; }
-.section-hero-content{ padding-top:0 !important; margin-top:0 !important; }
-
-.section-hero-intro .content-card{ padding-bottom:0 !important; margin-bottom:0 !important; }
-.section-hero-content .content-card{ margin-top:0 !important; }
 /* ================================
    SOFT PAIRING FOR "A SPACE TO..."
    calm, intentional breathing room
