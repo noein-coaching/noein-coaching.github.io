@@ -925,3 +925,6 @@ padding-bottom: 6rem;
 .section-hero-content {
     padding-top: 0.5rem;
 }
+.section-hero-content .content-card {
+    padding-top: 2rem;
+}
