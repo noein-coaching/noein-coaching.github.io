@@ -968,3 +968,20 @@ padding-bottom: 6rem;
 .section-hero-content h2 {
     margin-top: 0 !important;
 }
+/* Tighten hero intro + content pairs */
+.section-hero-intro {
+    padding-bottom: 0 !important;
+}
+
+.section-hero-content {
+    padding-top: 0 !important;
+}
+
+/* Remove margin that causes the visible gap */
+.section-hero-intro .content-card {
+    margin-bottom: 0 !important;
+}
+
+.section-hero-content .content-card {
+    margin-top: 0 !important;
+}
