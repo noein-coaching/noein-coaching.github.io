@@ -928,3 +928,11 @@ padding-bottom: 6rem;
 .section-hero-content .content-card {
     padding-top: 2rem;
 }
+/* Tighten spacing between "A space to..." titles and white cards */
+.section-hero-intro {
+    padding-bottom: 0.75rem;
+}
+
+.section-hero-content {
+    padding-top: 0.75rem;
+}
