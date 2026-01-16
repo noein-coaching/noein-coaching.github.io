@@ -917,3 +917,11 @@ padding-bottom: 6rem;
 .section-hero-content {
     padding-top: 1rem;
 }
+
+.section-hero-intro {
+    padding-bottom: 0.5rem;
+}
+
+.section-hero-content {
+    padding-top: 0.5rem;
+}
