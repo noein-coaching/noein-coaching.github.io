@@ -860,3 +860,14 @@ main.flex-fill {
 .section-hero-content.section-spacer {
   padding-top: 0 !important;
 }
+/* ======================================
+   REMOVE GAP BETWEEN HERO TITLE + CARD
+====================================== */
+
+.section-hero-intro.section-spacer {
+  padding-bottom: 0 !important;
+}
+
+.section-hero-content.section-spacer {
+  padding-top: 0 !important;
+}
