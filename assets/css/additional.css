@@ -985,3 +985,10 @@ padding-bottom: 6rem;
 .section-hero-content .content-card {
     margin-top: 0 !important;
 }
+.section-hero-intro h1 {
+    margin-bottom: 0 !important;
+}
+
+.section-hero-content h2 {
+    margin-top: 0 !important;
+}
