@@ -909,3 +909,11 @@ padding-bottom: 6rem;
 .content-card {
     margin-top: 0px;
 }
+/* Reduce space between hero title and intro card */
+.section-hero-intro {
+    padding-bottom: 1rem;
+}
+
+.section-hero-content {
+    padding-top: 1rem;
+}
