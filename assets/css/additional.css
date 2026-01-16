@@ -936,3 +936,11 @@ padding-bottom: 6rem;
 .section-hero-content {
     padding-top: 0.75rem;
 }
+/* Pair "A space to..." titles tightly with their content */
+.section-spacer.section-hero-intro {
+    padding-bottom: 0 !important;
+}
+
+.section-spacer.section-hero-content {
+    padding-top: 0 !important;
+}
