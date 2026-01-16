@@ -885,3 +885,34 @@ main.flex-fill {
 
 .section-hero-intro .content-card{ padding-bottom:0 !important; margin-bottom:0 !important; }
 .section-hero-content .content-card{ margin-top:0 !important; }
+/* ================================
+   SOFT PAIRING FOR "A SPACE TO..."
+   calm, intentional breathing room
+================================ */
+
+/* Reduce section padding without killing rhythm */
+.section-spacer.section-hero-intro {
+  padding-bottom: 0.75rem;
+}
+
+.section-spacer.section-hero-content {
+  padding-top: 0.75rem;
+}
+
+/* Gentle separation between title + card */
+.section-hero-intro .content-card {
+  margin-bottom: 0.5rem;
+}
+
+.section-hero-content .content-card {
+  margin-top: 0.5rem;
+}
+
+/* Calm typography spacing */
+.section-hero-intro h1 {
+  margin-bottom: 0.25rem;
+}
+
+.section-hero-content h2 {
+  margin-top: 0;
+}
