@@ -19,49 +19,6 @@
   background:#820d0d;
   transition:width .5s ease;
 }
-.underlineload:hover:after{ width:100%; }
-
-  .preloader-2 div {
-    position: relative !important;
-    width: auto !important;
-    height: auto !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-
-  .preloader-2 .preloader-message {
-    font-family: "GystRegular", sans-serif !important;
-    font-size: 2.25rem !important;
-    font-weight: 400 !important;
-    letter-spacing: 0 !important;
-    text-transform: none !important;
-    color: #282828 !important;
-    padding: 0 !important;
-    background: transparent !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }
-
-.underlineload:hover:after {
-background: #820d0d !important;
-width:100%;
-right: 0;
-}
-
-.underlineload:after {
-  background: none repeat scroll 0 0 transparent;
-  color: #820d0d !important;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 1px;
-  left: 0;
-  position: absolute;
-  background: #000;
-  transition: width 0.5s ease 0s, left 0.5s ease 0s;
-  width: 0;
-}
 
 #HASH {
   display: flex;
@@ -813,53 +770,6 @@ body, p, span, li, a, button, input, textarea, select, label {
   font-size: 1rem;
   opacity: 0.85;
 }
-
-
-/* ================================
-   TIGHT "A SPACE TO..." PAIRS
-================================ */
-
-.section-hero-intro {
-  padding-bottom: 0 !important;
-}
-
-.section-hero-content {
-  padding-top: 0 !important;
-}
-
-.section-hero-intro .content-card {
-  margin-bottom: 0 !important;
-}
-
-.section-hero-content .content-card {
-  margin-top: 0 !important;
-}
-
-.section-hero-intro h1 {
-  margin-bottom: 0 !important;
-}
-
-.section-hero-content h2 {
-  margin-top: 0 !important;
-}
-/* ======================================
-   REMOVE GAP BETWEEN HERO TITLE + CARD
-====================================== */
-
-/* Remove bottom padding from first section */
-.section-hero-intro.section-spacer {
-  padding-bottom: 0 !important;
-}
-
-/* Remove top padding from second section */
-.section-hero-content.section-spacer {
-  padding-top: 0 !important;
-}
-
-/* ================================
-   SOFT PAIRING FOR "A SPACE TO..."
-   calm, intentional breathing room
-================================ */
 
 /* Reduce section padding without killing rhythm */
 .section-spacer.section-hero-intro {
