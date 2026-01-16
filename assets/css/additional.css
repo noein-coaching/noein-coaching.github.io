@@ -992,3 +992,7 @@ padding-bottom: 6rem;
 .section-hero-content h2 {
     margin-top: 0 !important;
 }
+/* Remove global gap between hero intro/content pairs */
+main.flex-fill {
+  gap: 0 !important;
+}
