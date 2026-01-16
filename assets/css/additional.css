@@ -824,3 +824,28 @@ body, p, span, li, a, button, input, textarea, select, label {
 /* Keep headings calm and tight */
 .section-hero-intro h1 { margin-bottom: 0.25rem !important; }
 .section-hero-content .content-card { margin-top: 0 !important; }
+/* ================================
+   FIX: big gap between sections (flex gap)
+   Keep everything soft, but allow hero pairs to sit closer
+================================ */
+
+/* Reduce/remove the global flex gap that is creating the big space */
+main.flex-fill{
+  gap: 0 !important;
+}
+
+/* Bring back a gentle rhythm between normal sections */
+.section-spacer{
+  margin-bottom: var(--vertical-column-gap);
+}
+
+/* Soft pairing for the "A space to..." title + card */
+.section-spacer.section-hero-intro{
+  margin-bottom: 0 !important;
+  padding-bottom: 0.75rem !important;
+}
+
+.section-spacer.section-hero-content{
+  margin-top: 0 !important;
+  padding-top: 0.75rem !important;
+}
