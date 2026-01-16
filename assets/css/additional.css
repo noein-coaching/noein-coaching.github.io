@@ -772,6 +772,11 @@ body, p, span, li, a, button, input, textarea, select, label {
   opacity: 0.85;
 }
 
+/* ================================
+   SOFT PAIRING FOR "A SPACE TO..."
+   calm, intentional breathing room
+================================ */
+
 /* Reduce section padding without killing rhythm */
 .section-spacer.section-hero-intro {
   padding-bottom: 0.75rem;
@@ -798,7 +803,4 @@ body, p, span, li, a, button, input, textarea, select, label {
 .section-hero-content h2 {
   margin-top: 0;
 }
-/* ================================
-   SOFT PAIRING FOR "A SPACE TO..."
-   calm, intentional breathing room
-================================ */
+
