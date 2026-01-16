@@ -847,3 +847,16 @@ main.flex-fill {
 .section-hero-content h2 {
   margin-top: 0 !important;
 }
+/* ======================================
+   REMOVE GAP BETWEEN HERO TITLE + CARD
+====================================== */
+
+/* Remove bottom padding from first section */
+.section-hero-intro.section-spacer {
+  padding-bottom: 0 !important;
+}
+
+/* Remove top padding from second section */
+.section-hero-content.section-spacer {
+  padding-top: 0 !important;
+}
