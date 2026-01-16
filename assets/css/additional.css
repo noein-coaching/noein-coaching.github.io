@@ -879,3 +879,9 @@ main.flex-fill {
 .section-hero-content.section-spacer {
   padding-top: 0 !important;
 }
+/* Tighten title-card pairs */
+.section-hero-intro{ padding-bottom:0 !important; margin-bottom:0 !important; }
+.section-hero-content{ padding-top:0 !important; margin-top:0 !important; }
+
+.section-hero-intro .content-card{ padding-bottom:0 !important; margin-bottom:0 !important; }
+.section-hero-content .content-card{ margin-top:0 !important; }
