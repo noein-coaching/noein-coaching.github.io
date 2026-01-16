@@ -996,3 +996,12 @@ padding-bottom: 6rem;
 main.flex-fill {
   gap: 0 !important;
 }
+/* Restore spacing for normal sections */
+.section-spacer {
+  margin-bottom: var(--vertical-column-gap);
+}
+
+/* Keep hero intro + content tightly paired */
+.section-hero-intro + .section-hero-content {
+  margin-top: 0 !important;
+}
