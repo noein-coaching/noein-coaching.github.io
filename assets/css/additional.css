@@ -804,3 +804,23 @@ body, p, span, li, a, button, input, textarea, select, label {
   margin-top: 0;
 }
 
+/* ================================
+   TIGHTEN "A SPACE TO..." + CARD
+   (counteracts main.flex-fill gap)
+================================ */
+
+/* Keep a little breathing room, but smaller than the default flex gap */
+.section-spacer.section-hero-intro {
+  padding-bottom: 0.75rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* Pull the next section up to cancel most of main.flex-fill's gap */
+.section-spacer.section-hero-content {
+  padding-top: 0.75rem !important;
+  margin-top: calc(-1 * var(--vertical-column-gap) + 0.75rem) !important;
+}
+
+/* Keep headings calm and tight */
+.section-hero-intro h1 { margin-bottom: 0.25rem !important; }
+.section-hero-content .content-card { margin-top: 0 !important; }
