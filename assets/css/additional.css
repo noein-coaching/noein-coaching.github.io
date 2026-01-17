@@ -849,3 +849,18 @@ main.flex-fill{
   margin-top: 0 !important;
   padding-top: 0.75rem !important;
 }
+/* STRONG OVERRIDE — reduce big flex gap between title and card */
+
+main.flex-fill {
+  gap: 0 !important;
+}
+
+/* Specific soft space for just these two sections */
+.section-spacer.section-hero-intro {
+  margin-bottom: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
+}
+.section-spacer.section-hero-content {
+  margin-top: 0 !important;
+  padding-top: 0.4rem !important;
+}
