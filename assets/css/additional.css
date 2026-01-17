@@ -864,3 +864,42 @@ main.flex-fill {
   margin-top: 0 !important;
   padding-top: 0.4rem !important;
 }
+/* =========================================================
+   SOFT + CALM: tighten space between "A space to..." + card
+   (place at VERY END of additional.css)
+   ========================================================= */
+
+/* Remove extra spacing caused by the flex layout (sections stack) */
+main.flex-fill {
+  gap: 0 !important;
+}
+
+/* Keep gentle spacing for normal sections */
+.section-spacer {
+  margin-bottom: var(--vertical-column-gap);
+}
+
+/* But make the title+card pairs closer */
+.section-spacer.section-hero-intro {
+  padding-bottom: 0.25rem !important;
+  margin-bottom: 0 !important;
+}
+
+.section-spacer.section-hero-content {
+  padding-top: 0.25rem !important;
+  margin-top: 0 !important;
+}
+
+/* Remove any leftover card margins */
+.section-hero-intro .content-card {
+  margin-bottom: 0 !important;
+}
+
+.section-hero-content .content-card {
+  margin-top: 0 !important;
+}
+
+/* Slightly reduce title bottom margin */
+.section-hero-intro h1 {
+  margin-bottom: 0.15rem !important;
+}
