@@ -907,6 +907,3 @@ main.flex-fill {
   font-weight: 400;
 }
 
-.section-spacer h2 + .content-card {
-  margin-top: 0.5rem;
-}
