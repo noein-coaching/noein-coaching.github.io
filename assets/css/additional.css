@@ -764,20 +764,21 @@ body, p, span, li, a, button, input, textarea, select, label {
   font-size: 1rem;
   opacity: 0.85;
 }
-
 /* =========================================================
-   SOFT + CALM: tighten space between "A space to..." + card
+   SOFT + CALM: tighten space between hero title + first card
+   (place at VERY END of additional.css)
    ========================================================= */
 
 main.flex-fill{
   gap: 0 !important;
 }
 
-/* spacing for normal sections only (not the hero pair) */
+/* keep normal spacing for all other sections */
 .section-spacer:not(.section-hero-intro):not(.section-hero-content){
   margin-bottom: var(--vertical-column-gap);
 }
 
+/* tighten only this pair */
 .section-spacer.section-hero-intro{
   padding-bottom: 0.25rem !important;
   margin-bottom: 0 !important;
@@ -786,16 +787,4 @@ main.flex-fill{
 .section-spacer.section-hero-content{
   padding-top: 0.25rem !important;
   margin-top: 0 !important;
-}
-
-.section-hero-intro .content-card{
-  margin-bottom: 0 !important;
-}
-
-.section-hero-content .content-card{
-  margin-top: 0 !important;
-}
-
-.section-hero-intro h1{
-  margin-bottom: 0.15rem !important;
 }
