@@ -765,135 +765,37 @@ body, p, span, li, a, button, input, textarea, select, label {
   opacity: 0.85;
 }
 
-/* ================================
-   SOFT PAIRING FOR "A SPACE TO..."
-   calm, intentional breathing room
-================================ */
+/* =========================================================
+   SOFT + CALM: tighten space between "A space to..." + card
+   (KEEP ONLY THIS VERSION)
+   ========================================================= */
 
-/* Reduce section padding without killing rhythm */
-.section-spacer.section-hero-intro {
-  padding-bottom: 0.75rem;
-}
-
-.section-spacer.section-hero-content {
-  padding-top: 0.75rem;
-}
-
-/* Gentle separation between title + card */
-.section-hero-intro .content-card {
-  margin-bottom: 0.5rem;
-}
-
-.section-hero-content .content-card {
-  margin-top: 0.5rem;
-}
-
-/* Calm typography spacing */
-.section-hero-intro h1 {
-  margin-bottom: 0.25rem;
-}
-
-.section-hero-content h2 {
-  margin-top: 0;
-}
-
-/* ================================
-   TIGHTEN "A SPACE TO..." + CARD
-   (counteracts main.flex-fill gap)
-================================ */
-
-/* Keep a little breathing room, but smaller than the default flex gap */
-.section-spacer.section-hero-intro {
-  padding-bottom: 0.75rem !important;
-  margin-bottom: 0 !important;
-}
-
-/* Pull the next section up to cancel most of main.flex-fill's gap */
-.section-spacer.section-hero-content {
-  padding-top: 0.75rem !important;
-  margin-top: calc(-1 * var(--vertical-column-gap) + 0.75rem) !important;
-}
-
-/* Keep headings calm and tight */
-.section-hero-intro h1 { margin-bottom: 0.25rem !important; }
-.section-hero-content .content-card { margin-top: 0 !important; }
-/* ================================
-   FIX: big gap between sections (flex gap)
-   Keep everything soft, but allow hero pairs to sit closer
-================================ */
-
-/* Reduce/remove the global flex gap that is creating the big space */
 main.flex-fill{
   gap: 0 !important;
 }
 
-/* Bring back a gentle rhythm between normal sections */
 .section-spacer{
   margin-bottom: var(--vertical-column-gap);
 }
 
-/* Soft pairing for the "A space to..." title + card */
 .section-spacer.section-hero-intro{
-  margin-bottom: 0 !important;
-  padding-bottom: 0.75rem !important;
-}
-
-.section-spacer.section-hero-content{
-  margin-top: 0 !important;
-  padding-top: 0.75rem !important;
-}
-/* STRONG OVERRIDE — reduce big flex gap between title and card */
-
-
-/* Specific soft space for just these two sections */
-.section-spacer.section-hero-intro {
-  margin-bottom: 0.4rem !important;
-  padding-bottom: 0.4rem !important;
-}
-.section-spacer.section-hero-content {
-  margin-top: 0 !important;
-  padding-top: 0.4rem !important;
-}
-/* =========================================================
-   SOFT + CALM: tighten space between "A space to..." + card
-   (place at VERY END of additional.css)
-   ========================================================= */
-
-/* Remove extra spacing caused by the flex layout (sections stack) */
-main.flex-fill {
-  gap: 0 !important;
-}
-
-/* Keep gentle spacing for normal sections */
-.section-spacer {
-  margin-bottom: var(--vertical-column-gap);
-}
-
-/* But make the title+card pairs closer */
-.section-spacer.section-hero-intro {
   padding-bottom: 0.25rem !important;
   margin-bottom: 0 !important;
 }
 
-.section-spacer.section-hero-content {
+.section-spacer.section-hero-content{
   padding-top: 0.25rem !important;
   margin-top: 0 !important;
 }
 
-/* Remove any leftover card margins */
-.section-hero-intro .content-card {
+.section-hero-intro .content-card{
   margin-bottom: 0 !important;
 }
 
-.section-hero-content .content-card {
+.section-hero-content .content-card{
   margin-top: 0 !important;
 }
 
-/* Slightly reduce title bottom margin */
-.section-hero-intro h1 {
+.section-hero-intro h1{
   margin-bottom: 0.15rem !important;
 }
-.section-spacer h2 {
-  font-weight: 400;
-}
-
