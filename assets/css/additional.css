@@ -454,13 +454,6 @@ textarea {
   box-shadow: none;
 }
 
-main.flex-fill {
-  padding: var(--page-edge-buffer) 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--vertical-column-gap);
-}
-
 .navbar .navbar-brand .card {
   background: transparent;
   border: 0;
@@ -851,9 +844,6 @@ main.flex-fill{
 }
 /* STRONG OVERRIDE — reduce big flex gap between title and card */
 
-main.flex-fill {
-  gap: 0 !important;
-}
 
 /* Specific soft space for just these two sections */
 .section-spacer.section-hero-intro {
