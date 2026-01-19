@@ -767,14 +767,14 @@ body, p, span, li, a, button, input, textarea, select, label {
 
 /* =========================================================
    SOFT + CALM: tighten space between "A space to..." + card
-   (KEEP ONLY THIS VERSION)
    ========================================================= */
 
 main.flex-fill{
   gap: 0 !important;
 }
 
-.section-spacer{
+/* spacing for normal sections only (not the hero pair) */
+.section-spacer:not(.section-hero-intro):not(.section-hero-content){
   margin-bottom: var(--vertical-column-gap);
 }
 
