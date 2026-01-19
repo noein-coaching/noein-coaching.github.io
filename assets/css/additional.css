@@ -903,3 +903,10 @@ main.flex-fill {
 .section-hero-intro h1 {
   margin-bottom: 0.15rem !important;
 }
+.section-spacer h2 {
+  font-weight: 400;
+}
+
+.section-spacer h2 + .content-card {
+  margin-top: 0.5rem;
+}
