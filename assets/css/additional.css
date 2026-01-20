@@ -825,3 +825,7 @@ main.flex-fill{
 
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+.content-card:hover .space-card-img {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.1);
+}
