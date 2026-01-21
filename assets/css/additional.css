@@ -1,383 +1,522 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
-  <meta name="description" content="noein offers calm, one-to-one transformative coaching online, helping you find clarity, confidence and direction in life and work. Based in London.">
-  <meta name="keywords" content="coaching, clarity, thinking space, noein">
-  <link rel="canonical" href="https://www.noein.co.uk/">
+@charset "UTF-8";
+@import url("../fonts/stylesheet.css");
 
-  <title>noein | coaching for inner clarity – a space to think</title>
+/* ================================
+   LINKS: Underline hover
+================================ */
+.underlineload{
+  color:#820d0d !important;
+  display:inline-block;
+  position:relative;
+  top:0;
+}
+.underlineload:hover{ color:#820d0d !important; }
+.underlineload:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  height:1px;
+  width:0;
+  background:#820d0d;
+  transition:width .5s ease;
+}
+.underlineload:hover:after{ width:100%; }
 
-  <meta property="og:site_name" content="noein">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.noein.co.uk/">
-  <meta property="og:title" content="noein | Coaching for inner clarity – a space to think">
-  <meta property="og:description" content="noein offers calm, one-to-one transformative coaching online, helping you find clarity, confidence and direction in life and work. Based in London.">
-  <meta property="og:image" content="https://www.noein.co.uk/assets/images/noein-logo@2x.png">
+/* ================================
+   Layout helpers
+================================ */
+#HASH{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  flex-direction:row;
+}
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="noein | Coaching for inner clarity – a space to think">
-  <meta name="twitter:description" content="noein offers calm, one-to-one transformative coaching online, helping you find clarity, confidence and direction in life and work. Based in London.">
-  <meta name="twitter:image" content="https://www.noein.co.uk/assets/images/noein-logo@2x.png">
+.flex-wrapper{
+  display:flex !important;
+  min-height:100vh !important;
+  flex-direction:column !important;
+  justify-content:space-between !important;
+}
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "noein",
-    "url": "https://www.noein.co.uk/",
-    "description": "noein offers calm, one-to-one transformative coaching online, helping you find clarity, confidence and direction in life and work.",
-    "areaServed": { "@type": "Place", "name": "Online, based in London, United Kingdom" },
-    "founder": { "@type": "Person", "name": "Alexandra", "jobTitle": "Transformative Coach and Architect" },
-    "contactPoint": { "@type": "ContactPoint", "email": "alex@noein.co.uk", "contactType": "customer service" }
+:root{
+  --page-edge-buffer: 50px;
+  --vertical-column-gap: 30px;
+}
+
+/* ================================
+   Utility classes
+================================ */
+.img45x45{ width:45px !important; height:45px !important; }
+.img60x60{ width:60px !important; height:60px !important; }
+
+.greyscale{
+  -webkit-filter:grayscale(100%) !important;
+  filter:grayscale(100%) !important;
+  opacity:0.15 !important;
+  filter:alpha(opacity=15) !important;
+}
+
+.categorypill{
+  border:1px solid #efefef;
+  border-radius:200px;
+  padding:0 13px;
+}
+
+.paddingtop{
+  padding-top:10px !important;
+  padding-left:0 !important;
+}
+
+.padding-right-35{ padding-right:35px; }
+.padding-top-20{ padding-top:20px; }
+
+/* ================================
+   Base typography / smoothing
+================================ */
+html, body{
+  speak:none !important;
+  font-style:normal !important;
+  font-variant:normal !important;
+  text-transform:none !important;
+  -webkit-font-smoothing:subpixel-antialiased !important;
+  text-rendering:optimizeLegibility !important;
+}
+
+body{
+  min-height:100% !important;
+  color:#646464;
+  font-family:"FigtreeLight", sans-serif !important;
+  font-weight:300;
+  font-size:16px;
+  letter-spacing:0;
+}
+
+p{
+  font-family:"FigtreeLight", sans-serif !important;
+  font-weight:300 !important;
+}
+
+body, p, span, li, a, button, input, textarea, select, label{
+  font-family:"FigtreeLight", sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.hero-tagline-line,
+.heading-uppercase{
+  font-family:"GystRegular", sans-serif !important;
+}
+
+h1{ line-height:35px !important; }
+h2{ font-size:24px !important; line-height:27px !important; }
+h3, h5{ line-height:23px !important; }
+
+.align-left{ text-align:left !important; }
+
+.heading-uppercase{
+  font-weight:normal !important;
+  font-size:13px !important;
+  letter-spacing:1.5px !important;
+  text-transform:uppercase !important;
+}
+
+/* ================================
+   Colors
+================================ */
+.blue-font-color{ color:#820d0d !important; }
+.grey-font-color{ color:#282828 !important; }
+
+.text-primary{ color:#820d0d !important; }
+.accent-text{ color:#820d0d; }
+
+.page-bg{ background:#f8f3f1; }
+.header-white, .footer-white{ background:#ffffff !important; }
+
+hr{ background:rgba(238,238,238,0.9) !important; }
+
+a{
+  color:#141414 !important;
+  transition:linear 0.1s !important;
+}
+a:hover{ color:#820d0d !important; }
+
+.contact{ color:#282828 !important; }
+.contact:hover{ color:#820d0d !important; }
+
+.text-grey{ color:#efefef !important; }
+.bg-white-09{ background:rgba(251,238,238,0.9) !important; }
+
+/* ================================
+   Buttons
+================================ */
+.btn, .button, .text-btn, .text-btn-2, .text-btn-3{
+  font-family:"FigtreeLight", sans-serif !important;
+  font-weight:400;
+  font-size:13px;
+  letter-spacing:1.2px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  width:auto;
+  min-width:fit-content;
+  padding-inline:22px;
+}
+
+.accent-btn{
+  background:#820d0d;
+  border-color:#820d0d;
+  color:#ffffff !important;
+}
+.accent-btn:hover,
+.accent-btn:focus{
+  background:#5D0909;
+  border-color:#5D0909;
+  color:#ffffff !important;
+}
+
+/* ================================
+   Navbar (logo + hover swap)
+================================ */
+.navbar{ height:60px !important; }
+
+.navbar .navbar-brand{
+  display:flex;
+  align-items:center;
+  padding-top:6px;
+}
+
+.navbar .navbar-brand img{
+  max-height:60px;
+  display:block;
+  filter:none !important;
+}
+
+/* hover swap support */
+.card{
+  width:auto;
+  max-width:100%;
+  height:auto;
+  border:0;
+  background:transparent;
+}
+.card .img-top{
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:99;
+}
+.card:hover .img-top{ display:inline; }
+
+.navbar .navbar-brand .card{
+  position:relative;
+  display:inline-block;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  margin-bottom:0;
+  top:-7px;
+}
+
+.navbar .navbar-brand .card img:first-child{ display:block; }
+.navbar .navbar-brand .card:hover .img-top{ display:block; }
+.navbar .navbar-brand .card:hover img:first-child{ visibility:hidden; }
+
+.navbar .nav .nav-item .nav-link{
+  font:400 13px "google sans", sans-serif !important;
+}
+
+@media (min-width: 992px){
+  .navbar .nav .nav-item .nav-link{ line-height:60px !important; }
+  .navbar .nav .nav-item .dropdown-menu{ top:60px !important; }
+  .navbar .nav .nav-item.nav-megadropdown .mega-menu{ top:60px !important; }
+  .navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu,
+  .navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu .sub-dropdown .sub-dropdown-menu{
+    background:#fff !important;
   }
-  </script>
+}
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="/assets/images/favicons/favicon.svg">
-  <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-title" content="noein">
-  <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+@media (max-width: 992px){
+  .navbar .container, .navbar .container-fluid{ height:60px !important; }
+  .navbar .nav{
+    top:60px !important;
+    box-shadow:0 2px 14px 0 rgba(0,0,0,0) !important;
+  }
+  .navbar .dropdown-grey{
+    background:rgba(251,246,245,0.75) !important;
+  }
+}
 
-  <!-- CSS -->
-  <link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
-  <link href="assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet">
-  <link href="assets/css/app.css" rel="stylesheet">
-  <link href="assets/css/additional.css" rel="stylesheet">
+.navbar-placeholder-padding{ padding-top:60px !important; }
+.navbar-placeholder{ height:0; }
 
-  <!-- Fonts/Icons -->
-  <link href="assets/plugins/font-awesome-pro/css/all.css" rel="stylesheet">
-  <link href="assets/plugins/themify/themify-icons.min.css" rel="stylesheet">
-</head>
+.navbar .nav-toggle-btn{
+  background:#ffffff;
+  border-radius:8px;
+  padding:10px;
+}
 
-<body class="page-bg" data-preloader="2">
-  <div class="flex-wrapper">
+.navbar .nav.dropdown-grey .nav-megadropdown .mega-menu{
+  background:#f0f0f0 !important;
+}
 
-    <!-- HEADER / NAV -->
-    <header class="header-white">
-      <nav class="navbar navbar-sticky bg-white">
-        <div class="container d-flex align-items-center justify-content-between">
+/* ================================
+   Cards + sections
+================================ */
+.content-card{
+  background:#fffcfb;
+  border-radius:12px;
+  box-shadow:0 14px 40px rgba(72,147,193,0.08);
+  padding:32px;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
 
-          <a class="navbar-brand" href="/">
-            <div class="card">
-              <img src="assets/images/title.svg" alt="Logo">
-              <img src="assets/images/title-hover.svg" alt="Logo Hover" class="img-top">
-            </div>
-          </a>
+.content-card.content-card--translucent{
+  background:transparent;
+  box-shadow:none;
+}
 
-          <ul class="nav dropdown-grey">
-            <li class="nav-item grey-font-color">
-              <a class="nav-link" href="/"><p class="underlineload grey-font-color">Home</p></a>
-            </li>
-            <li class="nav-item grey-font-color">
-              <a class="nav-link" href="about.html"><p class="underlineload grey-font-color">About</p></a>
-            </li>
-            <li class="nav-item grey-font-color">
-              <a class="nav-link" href="services.html"><p class="underlineload grey-font-color">Services</p></a>
-            </li>
-            <li class="nav-item grey-font-color">
-              <a class="nav-link" href="contact.html"><p class="underlineload grey-font-color">Contact</p></a>
-            </li>
-          </ul>
+.section-spacer{
+  padding:var(--vertical-column-gap) 0;
+}
 
-          <button class="nav-toggle-btn d-lg-none">
-            <span class="lines"></span>
-          </button>
+.row.col-spacing-30{ row-gap:var(--vertical-column-gap); }
+.section-spacer .row{ row-gap:var(--vertical-column-gap); }
 
-        </div>
-      </nav>
-    </header>
+.equal-height-row > [class*='col-']{ display:flex; }
+.equal-height-row .content-card{ height:100%; flex:1; }
+.equal-height-row{ align-items:stretch !important; }
 
-    <main class="flex-fill">
+/* ================================
+   Lists (bullets)
+================================ */
+.list-checks{
+  list-style:none;
+  padding-left:0;
+  margin-bottom:0;
+}
 
-      <!-- HERO IMAGE -->
-      <section class="hero-image">
-        <img src="assets/images/hero.png" alt="A quiet space to think">
+.list-checks li{
+  position:relative;
+  padding-left:26px;
+  margin-bottom:10px;
+}
 
-        <div class="hero-overlay">
-          <blockquote>
-            <p>“Within yourself is a stillness, a sanctuary to which you can retreat at any time and be yourself.”</p>
-            <footer>— Hermann Hesse</footer>
-          </blockquote>
-        </div>
-      </section>
+.list-checks li:before{
+  content:"\2022";
+  font-family:"Font Awesome 5 Pro";
+  font-weight:600;
+  position:absolute;
+  left:0;
+  color:#820d0d;
+}
 
-      <!-- HERO TITLE + SUBTITLE -->
-      <section class="section-spacer section-hero-intro hero-section">
-        <div class="container text-center">
+/* ================================
+   Collapsible (FAQ style)
+================================ */
+.collapsible{
+  background-color:#f0f0f0 !important;
+  padding-left:35px !important;
+  padding-top:35px !important;
+}
 
-          <h1 class="mb-2">
-            <span class="blue-font-color">noein</span>
-            <span class="hero-separator">—</span>
-            <span class="hero-phrase">a space to think</span>
-          </h1>
+.greybackground{
+  background-color:#f0f0f0;
+  padding:35px;
+  width:100%;
+  border:0;
+  border-radius:5px;
+  outline:none;
+}
 
-          <h2 class="hero-subtitle mb-0">
-            Transformative coaching for individuals and professionals seeking clarity, confidence, and alignment with what matters most.
-          </h2>
+.collapsible::after{
+  font-family:"FontAwesome" !important;
+  font-size:20px;
+  content:"\f067";
+  float:right !important;
+  color:#606060;
+  transform:translate(190%,-300%);
+}
 
-        </div>
-      </section>
+.collapsible.active{
+  background-color:#f0f0f0;
+  border:0;
+  padding-left:35px;
+  padding-right:75px;
+  padding-top:35px;
+  padding-bottom:0;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+}
 
-      <!-- INTRO CARD -->
-      <section class="section-spacer section-hero-content pt-0">
-        <div class="container">
-          <div class="row col-spacing-30 align-items-start">
-            <div class="col-lg-12">
-              <div class="content-card h-100">
+.collapsible.active::after{
+  content:"\f068" !important;
+}
 
-                <p class="mb-3">
-                  I’m Alexandra — a Transformative Coach, Architect and founder of Noein. I support people who feel a quiet pull to step away from expectations,
-                  reconnect with themselves, and move forward with clarity and confidence — guided by their values.
-                </p>
+.collapsible:hover{ background-color:#f0f0f0 !important; }
+.collapsible:hover::after{ color:#000000 !important; }
 
-                <p class="mb-3">
-                  At Noein, you step into a space of personal reflection — a place to slow down, explore your thoughts, and rediscover what feels true for you.
-                </p>
+.content{
+  padding-left:35px !important;
+  background-color:#f0f0f0 !important;
+}
 
-                <p class="mb-3">
-                  It’s a calm space for honest conversation, thoughtful insight, and gentle transformation. Coaching here isn’t about being given answers; it’s about reconnecting with yourself and uncovering what’s already within you.
-                </p>
+/* ================================
+   Testimonials carousel
+================================ */
+.testimonial-carousel-card{
+  background:#fffcfb;
+  border-radius:14px;
+  padding:22px;
+  display:flex;
+  align-items:flex-start;
+  gap:18px;
+  height:100%;
+}
 
-                <p class="mb-4">
-                  Coaching at noein begins with space — space to think freely, to understand what truly matters, and to become more aligned with who you are and how you choose to live.
-                </p>
+.testimonial-headshot-placeholder{
+  width:68px;
+  height:68px;
+  background:#d9d9d9;
+  border-radius:12px;
+  flex-shrink:0;
+}
 
-                <p class="mt-3 mb-0">
-                  You can read more about Alexandra’s background on the <a href="about.html">About page</a>.
-                </p>
+.testimonial-carousel .owl-dots .owl-dot span{ background:#c0c0c0; }
+.testimonial-carousel .owl-dots .owl-dot.active span{ background:#820d0d; }
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+#reviewCarousel .testimonial-box{
+  background:#f7f7f7;
+  border-radius:12px;
+  height:100%;
+}
+#reviewCarousel .owl-dots .owl-dot span{ background:#c0c0c0; }
+#reviewCarousel .owl-dots .owl-dot.active span{ background:#820d0d; }
 
-      <!-- THREE "SPACE TO" CARDS -->
-      <section class="section-spacer">
-        <div class="container">
-          <div class="row col-spacing-30 align-items-start">
+/* ================================
+   HERO image + overlay quote
+================================ */
+.hero-image{
+  position:relative;
+  width:100%;
+  height:80vh;
+  overflow:hidden;
+}
 
-            <!-- THINK -->
-            <div class="col-lg-4 mb-4 mb-lg-0 text-center">
-              <h2 class="mb-3">A space to <i class="blue-font-color">think</i>.</h2>
+.hero-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:brightness(0.8) contrast(0.95);
+}
 
-              <img
-                src="assets/images/space-think.jpg"
-                alt="A space to think"
-                class="space-card-img"
-              >
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:3rem;
+  text-align:center;
+}
 
-              <div class="content-card h-100">
-                <ul class="list-checks mb-0 text-left">
-                  <li>Exploration and widening awareness.</li>
-                  <li>Expanding perspective and possibility.</li>
-                  <li>Gentle curiosity.</li>
-                </ul>
-              </div>
-            </div>
+.hero-overlay blockquote{
+  max-width:720px;
+  margin:0;
+  color:#ffffff;
+}
 
-            <!-- UNDERSTAND -->
-            <div class="col-lg-4 mb-4 mb-lg-0 text-center">
-              <h2 class="mb-3">A space to <i class="blue-font-color">understand</i>.</h2>
+.hero-overlay blockquote p{
+  font-size:clamp(1.5rem, 3vw, 2.2rem);
+  font-weight:300;
+  line-height:1.4;
+  letter-spacing:0.02em;
+  margin-bottom:1rem;
+}
 
-              <img
-                src="assets/images/space-understand.jpg"
-                alt="A space to understand"
-                class="space-card-img"
-              >
+.hero-overlay blockquote footer{
+  font-size:0.95rem;
+  opacity:0.8;
+  letter-spacing:0.05em;
+}
 
-              <div class="content-card h-100">
-                <ul class="list-checks mb-0 text-left">
-                  <li>Seeing patterns clearly.</li>
-                  <li>Making sense of what you’re experiencing.</li>
-                  <li>Allowing insight to emerge.</li>
-                </ul>
-              </div>
-            </div>
+/* ================================
+   HERO title styling
+================================ */
+.hero-section{
+  max-width:900px;
+  margin:0 auto;
+}
 
-            <!-- BECOME -->
-            <div class="col-lg-4 mb-4 mb-lg-0 text-center">
-              <h2 class="mb-3">A space to <i class="blue-font-color">become</i>.</h2>
+.hero-separator{
+  margin:0 0.4rem;
+  opacity:0.35;
+}
 
-              <img
-                src="assets/images/space-become.jpg"
-                alt="A space to become"
-                class="space-card-img"
-              >
+.hero-phrase{
+  font-style:italic;
+  font-weight:300;
+  color:#141414;
+}
 
-              <div class="content-card h-100">
-                <ul class="list-checks mb-0 text-left">
-                  <li>Integrating insight.</li>
-                  <li>Returning to what feels true.</li>
-                  <li>Action shaped by values and priorities.</li>
-                </ul>
-              </div>
-            </div>
+.hero-subtitle{
+  max-width:720px;
+  margin:0 auto;
+  font-size:1.05rem;
+  line-height:1.55;
+  font-weight:300;
+  opacity:0.85;
+}
 
-          </div>
-        </div>
-      </section>
+/* ================================
+   FIX spacing between hero title + first card
+   (only affects these two sections)
+================================ */
+main.flex-fill{
+  gap:0 !important;
+}
 
-      <!-- TESTIMONIALS -->
-      <section class="section-spacer">
-        <div class="container">
-          <div class="content-card">
+.section-spacer:not(.section-hero-intro):not(.section-hero-content){
+  margin-bottom:var(--vertical-column-gap);
+}
 
-            <div class="row mb-4 align-items-center">
-              <div class="col-lg-8">
-                <h2 class="mb-0">What people say.</h2>
-              </div>
-              <div class="col-lg-4 text-lg-right mt-3 mt-lg-0">
-                <a class="btn btn-outline-dark" href="contact.html">Book a discovery call</a>
-              </div>
-            </div>
+.section-spacer.section-hero-intro{
+  padding-bottom:0.25rem !important;
+  margin-bottom:0 !important;
+}
 
-            <div class="row">
-              <div class="col-12">
-                <div class="owl-carousel testimonial-carousel" id="testimonialCarousel"
-                  data-owl-items="2" data-owl-xs="1" data-owl-sm="1" data-owl-md="2" data-owl-lg="2"
-                  data-owl-margin="24" data-owl-dots="true" data-owl-nav="false" data-owl-loop="true"
-                  data-owl-autoplay="true" data-owl-autoplayTimeout="6000">
+.section-spacer.section-hero-content{
+  padding-top:0.25rem !important;
+  margin-top:0 !important;
+}
 
-                  <div class="testimonial-carousel-card">
-                    <div>
-                      <p class="mb-3">“Working with Alexandra was a truly valuable experience. From the very beginning, she created a safe and comfortable space where I felt at ease sharing my thoughts and past experiences. Through her guidance, I gained deeper self-awareness, a clearer understanding of my strengths, and a fresh perspective on my professional environment.”</p>
-                      <p class="mb-0 text-primary"><strong>Private client, London, UK</strong></p>
-                    </div>
-                  </div>
+/* ================================
+   "SPACE TO" images (simple + clean)
+   Put the <img> INSIDE the card at the top
+================================ */
+.space-card-img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:12px;
+  margin:0 0 18px 0;
+  display:block;
+  box-shadow:0 18px 40px rgba(0,0,0,0.08);
+  filter:grayscale(0.1) contrast(0.95) brightness(0.98);
+  transition:transform 0.35s ease, box-shadow 0.35s ease;
+}
 
-                  <div class="testimonial-carousel-card">
-                    <div>
-                      <p class="mb-3">“Alexandra was considerate and thought-provoking throughout the coaching. She had a considered yet straightforward approach.”</p>
-                      <p class="mb-0 text-primary"><strong>Private client, London, UK</strong></p>
-                    </div>
-                  </div>
-
-                  <div class="testimonial-carousel-card">
-                    <div>
-                      <p class="mb-3">“It’s been great working with Alexandra. Her calm, empathic approach created a trusting environment and her active listening skills made me feel heard.”</p>
-                      <p class="mb-0 text-primary"><strong>Private client, London, UK</strong></p>
-                    </div>
-                  </div>
-
-                  <div class="testimonial-carousel-card">
-                    <div>
-                      <p class="mb-3">“These sessions help you realise you have all the tools and answers to achieve what you want in certain aspects of your life.”</p>
-                      <p class="mb-0 text-primary"><strong>Private client, London, UK</strong></p>
-                    </div>
-                  </div>
-
-                  <div class="testimonial-carousel-card">
-                    <div>
-                      <p class="mb-3">“I have learnt so much about myself during our sessions and I would highly recommend them for anyone who is questioning their direction in life.”</p>
-                      <p class="mb-0 text-primary"><strong>Private client, London, UK</strong></p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <section class="section-spacer">
-        <div class="container">
-          <div class="content-card text-center h-100">
-            <h2 class="mb-3">If noein feels like the right space, let’s begin with a short conversation.</h2>
-            <br>
-
-            <div class="row align-items-center">
-              <div class="col-lg-2"></div>
-
-              <div class="col-lg-4">
-                <a class="btn accent-btn mr-3 mb-2 text-center" href="https://calendly.com/alexandraa-noein/30min">Book a discovery call</a>
-              </div>
-
-              <div class="col-lg-4">
-                <a class="btn btn-outline-dark mr-3 mb-2 text-center" href="mailto:alex@noein.co.uk">Send me an email</a>
-              </div>
-
-              <div class="col-lg-2"></div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer-white">
-      <div class="navbar-sticky">
-        <div class="container"></div>
-      </div>
-
-      <div class="navbar bg-white">
-        <div class="container">
-          <div class="row align-items-center">
-
-            <div class="col-12 col-md-4 text-center text-md-left">
-              <h3 class="heading-uppercase font-family-roboto grey-font-color"><b>
-                &copy;
-                <span id="copyright"></span>
-                noein
-              </b></h3>
-              <script>
-                document.getElementById('copyright').textContent = new Date().getFullYear();
-              </script>
-            </div>
-
-            <div class="col-12 col-md-4 text-center">
-              <ul class="list-horizontal-unstyled mb-0"></ul>
-            </div>
-
-            <div class="col-12 col-md-4 text-center text-md-right">
-              <ul class="list-horizontal-unstyled mb-0">
-                <li><a href="https://calendly.com/alexandraa-noein/30min"><i class="far fa-calendar contact"></i></a></li>
-                <li><a href="https://www.instagram.com/noein_coaching/"><i class="fab fa-instagram contact"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/alexandra-anagnostopoulou-917a84101/"><i class="fab fa-linkedin contact"></i></a></li>
-                <li><a href="mailto:alex@noein.co.uk"><i class="far fa-envelope contact"></i></a></li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  </div>
-
-  <!-- ***** JAVASCRIPTS ***** -->
-  <script src="assets/plugins/jquery.min.js"></script>
-  <script src="assets/plugins/bootstrap/popperold.min.js"></script>
-
-  <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="assets/plugins/appear.min.js"></script>
-  <script src="assets/plugins/easing.min.js"></script>
-  <script src="assets/plugins/retina.min.js"></script>
-  <script src="assets/plugins/countdown.min.js"></script>
-  <script src="assets/plugins/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/plugins/isotope.pkgd.min.js"></script>
-  <script src="assets/plugins/jarallax/jarallax.min.js"></script>
-  <script src="assets/plugins/jarallax/jarallax-video.min.js"></script>
-  <script src="assets/plugins/jarallax/jarallax-element.min.js"></script>
-  <script src="assets/plugins/magnific-popup/magnific-popup.min.js"></script>
-  <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-
-  <!-- (Optional) Google Maps - remove if you’re not using it -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
-  <script src="assets/plugins/gmaps.min.js"></script>
-
-  <script src="assets/js/functions.js"></script>
-</body>
-</html>
+.content-card:hover .space-card-img{
+  transform:translateY(-2px);
+  box-shadow:0 22px 48px rgba(0,0,0,0.10);
+}
