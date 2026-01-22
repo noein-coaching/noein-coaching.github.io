@@ -830,3 +830,24 @@ main.flex-fill{
   transform: translateY(-2px);
   box-shadow: 0 22px 48px rgba(0,0,0,0.10);
 }
+/* =========================================================
+   FIX: prevent "space to" images/overlap from colliding
+   with the next section ("What people say")
+   ========================================================= */
+
+.space-cards-section{
+  padding-bottom: 60px;      /* creates breathing room below the 3 cards */
+  position: relative;
+  z-index: 1;
+}
+
+/* If you want the float/overlap look, keep it — but stop it causing collisions */
+.space-card-img{
+  margin-bottom: 18px !important; /* IMPORTANT: removes the negative pull */
+}
+
+/* (Optional) Make sure the next section always sits above visually */
+.space-cards-section + .section-spacer{
+  position: relative;
+  z-index: 2;
+}
