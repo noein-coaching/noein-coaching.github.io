@@ -35,10 +35,9 @@
     box-shadow: none !important;
   }
 
-.:hover:after {
-background: #820d0d !important;
-width:100%;
-right: 0;
+.underlineload:hover:after{
+  background: #820d0d !important;
+  width: 100%;
 }
 
 .underlineload:after {
@@ -777,7 +776,7 @@ body, p, span, li, a, button, input, textarea, select, label {
    ========================================================= */
 
 main.flex-fill{
-  gap: 0 !important;
+  gap: var(--vertical-column-gap) !important;
 }
 
 /* keep spacing for normal sections, but not this hero pair */
@@ -794,6 +793,7 @@ main.flex-fill{
 .section-spacer.section-hero-content{
   padding-top: 0.25rem !important;
   margin-top: 0 !important;
+  }
 
 /* Clean, calm images above the "space to" cards */
 .space-card-img{
@@ -818,7 +818,7 @@ main.flex-fill{
 
 /* Create real space below the cards section */
 .space-cards-section{
-  margin-bottom: 60px !important;
+  padding-bottom: 80px !important;
 }
 
 /* Make sure images don't use any old overlap styling */
