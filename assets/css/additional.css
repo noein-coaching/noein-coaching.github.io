@@ -816,6 +816,6 @@ main.flex-fill{
 
 /* Give breathing room before testimonials */
 .space-cards-section{
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
