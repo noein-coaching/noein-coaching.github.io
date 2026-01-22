@@ -814,27 +814,18 @@ main.flex-fill{
   box-shadow: 0 18px 36px rgba(0,0,0,0.10);
 }
 
-/* Give breathing room before testimonials */
-.space-cards-section{
-  padding-bottom: 80px;
-}
-
 /* ===== FIX: Space-to section should NOT collide with testimonials ===== */
-
-/* Make sure the section creates real space below it */
 .space-cards-section{
-  padding-bottom: 80px !important;   /* space between cards + testimonials */
-  margin-bottom: 0 !important;       /* avoid weird margin collapse */
+  padding-bottom: 80px !important;
+  margin-bottom: 0 !important;
 }
 
-/* Ensure images never overlap into the next section */
 .space-cards-section .space-card-img{
   position: static !important;
   z-index: auto !important;
-  margin-bottom: 16px !important;    /* IMPORTANT: no negative margin */
+  margin-bottom: 16px !important;
 }
 
-/* Optional: give the testimonials section a little top breathing room */
 .space-cards-section + .section-spacer{
   padding-top: 40px !important;
 }
