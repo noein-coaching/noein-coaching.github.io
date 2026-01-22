@@ -851,9 +851,36 @@ main.flex-fill{
     padding: 18px 18px;
     border-radius: 14px;
 
-    /* Make "space to" images softly rounded (philosophical, organic feel) */
-.space-card-img{
-  border-radius: 999px !important;   /* full pill / circle feel */
 
+/* =========================================================
+   FLOATING IMAGE ABOVE CARD (image sits ABOVE, overlaps card)
+   ========================================================= */
+
+.space-card-img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+
+  /* float feel: image overlaps into the card */
+  margin-bottom: -22px;
+  display: block;
+
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  filter: grayscale(0.1) contrast(0.95) brightness(0.98);
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Add breathing room so card content doesn't clash with overlap */
+.space-card-img + .content-card{
+  padding-top: 40px;
+}
+
+/* Hover: lift image slightly */
+.space-card-img:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 22px 48px rgba(0,0,0,0.10);
+}
 
 
