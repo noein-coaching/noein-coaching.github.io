@@ -900,5 +900,11 @@ main.flex-fill{
 .space-card-img{
   border-radius: 999px !important;   /* full pill / circle feel */
 }
+/* Make hero 'noein' match logo font */
+.hero-noein {
+  font-family: "GystRegular", sans-serif !important;
+  font-weight: 400;
+  letter-spacing: 0;
+}
 
 
