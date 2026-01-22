@@ -896,7 +896,7 @@ main.flex-fill{
     padding: 18px 18px;
     border-radius: 14px;
   }
-}
 .space-card-img{
-  border-radius: 24px !important;   /* soft rounded rectangle */
+  border-radius: 999px !important;
 }
+
