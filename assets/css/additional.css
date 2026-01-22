@@ -795,59 +795,27 @@ main.flex-fill{
   padding-top: 0.25rem !important;
   margin-top: 0 !important;
 }
-
-/* =========================================================
-   FLOATING IMAGES ABOVE THE "SPACE TO" CARDS
-   (image is OUTSIDE the card in your HTML)
-   ========================================================= */
-
+/* Clean, calm images above the "space to" cards */
 .space-card-img{
   width: 100%;
-  height: 180px;
+  height: 140px;
   object-fit: cover;
   border-radius: 12px;
   display: block;
+  margin-bottom: 16px;
 
-  /* make it feel like it floats above the card */
-  margin-bottom: -22px;
-
-  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
   filter: grayscale(0.1) contrast(0.95) brightness(0.98);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-
-  position: relative;
-  z-index: 2;
-}
-
-/* push card content down so it doesn't collide with the overlapped image */
-.space-card-img + .content-card{
-  padding-top: 40px;
-  position: relative;
-  z-index: 1;
 }
 
 .space-card-img:hover{
   transform: translateY(-2px);
-  box-shadow: 0 22px 48px rgba(0,0,0,0.10);
+  box-shadow: 0 18px 36px rgba(0,0,0,0.10);
 }
-/* =========================================================
-   FIX: prevent "space to" images/overlap from colliding
-   with the next section ("What people say")
-   ========================================================= */
 
+/* Give breathing room before testimonials */
 .space-cards-section{
-  padding-bottom: 60px;      /* creates breathing room below the 3 cards */
-  position: relative;
-  z-index: 1;
+  margin-bottom: 80px;
 }
 
-/* If you want the float/overlap look, keep it — but stop it causing collisions */
-.space-card-img{
-  margin-bottom: 18px !important; /* IMPORTANT: removes the negative pull */
-}
-
-/* (Optional) Make sure the next section always sits above visually */
-.space-cards-section + .section-spacer{
-  position: relative;
-  z-index: 2;
-}
