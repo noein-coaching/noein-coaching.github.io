@@ -850,7 +850,8 @@ main.flex-fill{
   .hero-overlay blockquote{
     padding: 18px 18px;
     border-radius: 14px;
-
+  }
+}
 
 /* =========================================================
    FLOATING IMAGE ABOVE CARD (image sits ABOVE, overlaps card)
@@ -860,7 +861,9 @@ main.flex-fill{
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-radius: 12px;
+
+  /* make them rounder */
+  border-radius: 20px;
 
   /* float feel: image overlaps into the card */
   margin-bottom: -22px;
@@ -882,16 +885,3 @@ main.flex-fill{
   transform: translateY(-2px);
   box-shadow: 0 22px 48px rgba(0,0,0,0.10);
 }
-
-/* Reduce spacing below the "space to" section */
-.space-cards-section{
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-    
-/* Add a clean separation before testimonials */
-.testimonials-section{
-  padding-top: 20px !important;
-  margin-top: 0 !important;
-}
-
