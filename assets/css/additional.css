@@ -776,8 +776,9 @@ body, p, span, li, a, button, input, textarea, select, label {
    ========================================================= */
 
 main.flex-fill{
-  gap: var(--vertical-column-gap) !important;
+  gap: 0 !important;
 }
+
 
 /* keep spacing for normal sections, but not this hero pair */
 .section-spacer:not(.section-hero-intro):not(.section-hero-content){
