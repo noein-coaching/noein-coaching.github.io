@@ -842,3 +842,98 @@ main.flex-fill{
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+/* ================================
+   HERO QUOTE: philosophical aesthetic
+================================ */
+
+/* Make the hero image slightly darker + calmer */
+.hero-image img{
+  filter: brightness(0.72) contrast(0.95) saturate(0.9);
+  transform: scale(1.02); /* tiny scale helps feel immersive */
+}
+
+/* Add a soft dark gradient for readability (no HTML change needed) */
+.hero-image{
+  position: relative;
+}
+
+.hero-image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.35) 0%,
+    rgba(0,0,0,0.30) 40%,
+    rgba(0,0,0,0.40) 100%
+  );
+  pointer-events:none;
+  z-index: 1;
+}
+
+/* Ensure overlay sits ABOVE the gradient */
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: clamp(24px, 5vw, 64px);
+  text-align:center;
+  z-index: 2;
+}
+
+/* The quote container */
+.hero-overlay blockquote{
+  max-width: 860px;
+  margin: 0;
+  color: rgba(255,255,255,0.95);
+  padding: clamp(18px, 3vw, 28px) clamp(18px, 4vw, 36px);
+  border-radius: 18px;
+
+  /* subtle “glass” feel */
+  background: rgba(0,0,0,0.18);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 18px 60px rgba(0,0,0,0.25);
+}
+
+/* Big opening quote mark */
+.hero-overlay blockquote::before{
+  content: "“";
+  display:block;
+  font-family: "GystRegular", serif;
+  font-size: clamp(46px, 7vw, 84px);
+  line-height: 1;
+  opacity: 0.7;
+  margin-bottom: -10px;
+}
+
+/* Quote text */
+.hero-overlay blockquote p{
+  margin: 0 0 14px;
+  font-size: clamp(1.3rem, 2.4vw, 2.2rem);
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+
+  text-shadow: 0 10px 28px rgba(0,0,0,0.45);
+}
+
+/* Author */
+.hero-overlay blockquote footer{
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+/* Mobile: keep it elegant but not huge */
+@media (max-width: 576px){
+  .hero-overlay blockquote{
+    padding: 18px 18px;
+    border-radius: 14px;
+  }
+}
