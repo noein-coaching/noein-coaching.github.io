@@ -883,4 +883,15 @@ main.flex-fill{
   box-shadow: 0 22px 48px rgba(0,0,0,0.10);
 }
 
+/* Reduce spacing below the "space to" section */
+.space-cards-section{
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+    
+/* Add a clean separation before testimonials */
+.testimonials-section{
+  padding-top: 20px !important;
+  margin-top: 0 !important;
+}
 
