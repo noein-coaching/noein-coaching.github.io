@@ -899,14 +899,6 @@ main.flex-fill{
     /* Make "space to" images softly rounded (philosophical, organic feel) */
 .space-card-img{
   border-radius: 999px !important;   /* full pill / circle feel */
-}
-/* Match hero 'noein' to logo style */
-.hero-noein{
-  font-family: "GystRegular", sans-serif !important;
-  font-weight: 400 !important;
-  letter-spacing: -0.015em;     /* tighten like the logo */
-  text-transform: lowercase;  /* logo is lowercase */
-}
 
 
 
