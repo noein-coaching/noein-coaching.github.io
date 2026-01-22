@@ -6,7 +6,7 @@
   color: #820d0d !important;
     display: inline-block;
     position: relative;
-    top: -100;
+    top: 0;     /* or -100px if you really meant that */
   }
 
   .underlineload:hover {
@@ -35,7 +35,7 @@
     box-shadow: none !important;
   }
 
-.underlineload:hover:after {
+.:hover:after {
 background: #820d0d !important;
 width:100%;
 right: 0;
@@ -794,7 +794,7 @@ main.flex-fill{
 .section-spacer.section-hero-content{
   padding-top: 0.25rem !important;
   margin-top: 0 !important;
-}
+
 /* Clean, calm images above the "space to" cards */
 .space-card-img{
   width: 100%;
@@ -814,18 +814,14 @@ main.flex-fill{
   box-shadow: 0 18px 36px rgba(0,0,0,0.10);
 }
 
-/* ===== FIX: Space-to section should NOT collide with testimonials ===== */
+/* ===== Ensure Space-to section never collides with testimonials ===== */
 .space-cards-section{
-  padding-bottom: 80px !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 80px !important;
+  padding-bottom: 0 !important;
 }
 
 .space-cards-section .space-card-img{
-  position: static !important;
-  z-index: auto !important;
   margin-bottom: 16px !important;
+  position: static !important;
 }
 
-.space-cards-section + .section-spacer{
-  padding-top: 40px !important;
-}
