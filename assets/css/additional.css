@@ -931,6 +931,7 @@ main.flex-fill{
 .space-cards-section .content-card{
   padding-top: 64px !important;
 }
+
 /* ================================
    ABOUT PORTRAIT – circle, centred, soft fade
 ================================ */
@@ -940,7 +941,7 @@ main.flex-fill{
   height: 400px !important;
   object-fit: cover !important;
   object-position: center center !important;
-  border-radius: 50% !important; /* perfect circle */
+  border-radius: 50% !important;
   display: block !important;
   margin: 0 auto 24px auto !important;
 
