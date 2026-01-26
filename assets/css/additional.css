@@ -932,12 +932,23 @@ main.flex-fill{
   padding-top: 64px !important;
 }
 /* ================================
-   ABOUT PORTRAIT – calm, round, soft
+   ABOUT PORTRAIT – circle, centred, soft fade
 ================================ */
 
-.about-portrait{
-  width: 400px;              /* size of the circle */
-  height: 400px;
-  object-fit: cover;        /* keeps face centered */
-  border-radius: 50%;       /* makes it a circle */
- 
+.about-portrait {
+  width: 260px !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 50% !important; /* perfect circle */
+  display: block !important;
+  margin: 0 auto 24px auto !important;
+
+  filter:
+    brightness(0.92)
+    contrast(0.92)
+    saturate(0.88)
+    grayscale(0.12);
+
+  box-shadow: 0 16px 36px rgba(0,0,0,0.14);
+}
