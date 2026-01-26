@@ -936,8 +936,8 @@ main.flex-fill{
 ================================ */
 
 .about-portrait{
-  width: 280px;              /* size of the circle */
-  height: 280px;
+  width: 400px;              /* size of the circle */
+  height: 400px;
   object-fit: cover;        /* keeps face centered */
   border-radius: 50%;       /* makes it a circle */
  
