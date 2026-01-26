@@ -860,7 +860,6 @@ main.flex-fill{
   object-fit: cover;
   border-radius: 50%;    
   display: block;
-  margin: 0 auto -46px;  
 
   position: relative;   /* ← moved inside */
   z-index: 2;
