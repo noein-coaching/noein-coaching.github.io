@@ -1014,3 +1014,6 @@ main.flex-fill{
   font-size: 0.9rem;
   opacity: 0.75;
 }
+.equal-height-row > [class*="col-"]{
+  display: flex;
+}
