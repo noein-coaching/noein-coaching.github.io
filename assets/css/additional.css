@@ -932,20 +932,18 @@ main.flex-fill{
   padding-top: 64px !important;
 }
 
-/* ================================
-   ABOUT PORTRAIT – circle, centred, soft fade
-================================ */
-
+/* ABOUT portrait: circle, centered, slightly faded */
 .about-portrait{
-  width: 260px !important;
-  height: 260px !important;
-  border-radius: 50% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-  margin: 0 auto !important;
-  filter: brightness(0.92) contrast(0.92) saturate(0.88) grayscale(0.12);
-}
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
 
+  /* subtle fade to match hero */
+  filter: brightness(0.92) contrast(0.92) saturate(0.9) grayscale(0.12);
+  opacity: 0.95;
 }
 
