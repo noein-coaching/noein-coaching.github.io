@@ -967,13 +967,16 @@ main.flex-fill{
   object-fit: cover;
 
   /* LOWER the focus so people are visible */
-  object-position: center 55%;
+  object-position: center 70%;
 
   /* gentle fade, still calm */
   filter:
     brightness(0.92)
     contrast(0.95)
     saturate(0.9);
+}
+.about-image-card + .about-image-card{
+  margin-top: 28px;
 }
 
 /* Caption */
