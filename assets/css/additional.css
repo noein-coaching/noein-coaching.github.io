@@ -936,21 +936,16 @@ main.flex-fill{
    ABOUT PORTRAIT – circle, centred, soft fade
 ================================ */
 
-.about-portrait {
-  width: 300px !important;
-  height: 300px !important;
-  object-fit: cover !important;
-  object-position: center center !important;
+.about-portrait{
+  width: 260px !important;
+  height: 260px !important;
   border-radius: 50% !important;
+  object-fit: cover !important;
+  object-position: center !important;
   display: block !important;
-  margin: 0 auto 24px auto !important;
+  margin: 0 auto !important;
+  filter: brightness(0.92) contrast(0.92) saturate(0.88) grayscale(0.12);
+}
 
-  filter:
-    brightness(0.92)
-    contrast(0.92)
-    saturate(0.88)
-    grayscale(0.12);
-
-  box-shadow: 0 16px 36px rgba(0,0,0,0.14);
 }
 
