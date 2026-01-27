@@ -979,12 +979,38 @@ main.flex-fill{
   margin-top: 28px;
 }
 
-/* Caption */
+}
+/* Make the right column stretch to match the left column height */
+.about-images-col{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Let the images take up available space so caption drops to bottom */
+.about-image-stack{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  flex-grow: 1;
+}
+
+/* Card-like images */
+.about-image{
+  width: 100%;
+  border-radius: 18px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+}
+
+/* Optional: consistent heights */
+.about-portrait{ height: 320px; }
+.about-work{ height: 320px; }
+
+/* Caption sits at the bottom */
 .about-caption{
+  margin: 16px 0 0;
   font-size: 0.9rem;
   opacity: 0.75;
-  text-align: center;
-  max-width: 520px;
-  margin: 0 auto;
-  line-height: 1.5;
 }
