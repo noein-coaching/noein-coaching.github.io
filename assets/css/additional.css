@@ -932,42 +932,42 @@ main.flex-fill{
   padding-top: 64px !important;
 }
 
-/* ABOUT portrait: circle, centered, slightly faded */
-.about-portrait{
-   width: 100%;
-  max-width: 520px;
-  height: auto;
-  display: block;
-  margin: 18px auto 0;
+/* ===============================
+   ABOUT PAGE – stacked image cards
+   =============================== */
 
-  border-radius: 18px;
-  object-fit: cover;
-
-  filter: brightness(0.92) contrast(0.95) saturate(0.9) grayscale(0.12);
-  opacity: 0.95;
-
-  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+.about-image-stack{
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* breathing space between cards */
 }
-/* Second About image: soft, calm, aligned with brand */
-.about-presenting{
+
+.about-image{
   width: 100%;
-  max-width: 520px;
-  height: auto;
-  display: block;
-  margin: 18px auto 0;
-
   border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.10);
   object-fit: cover;
-
-  filter: brightness(0.92) contrast(0.95) saturate(0.9) grayscale(0.12);
-  opacity: 0.95;
-
-  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+  display: block;
 }
+
+/* Portrait: keep natural framing */
+.about-portrait{
+  aspect-ratio: 4 / 5;
+  object-position: center 25%;
+}
+
+/* Workplace: crop top and pull image upward */
+.about-work{
+  aspect-ratio: 16 / 10;
+  object-position: center 15%; /* crops ceiling & lifts people up */
+}
+
+/* Caption */
 .about-caption{
-  max-width: 520px;
-  margin: 10px auto 0;
-  font-size: 0.95rem;
-  opacity: 0.8;
+  font-size: 0.9rem;
+  opacity: 0.75;
   text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.5;
 }
