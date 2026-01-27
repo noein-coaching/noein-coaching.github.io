@@ -964,7 +964,7 @@ main.flex-fill{
 /* Workplace: crop top and pull image upward */
 .about-work{
   aspect-ratio: 16 / 10;
-  object-position: center 15%;   /* lifts the people up, removes ceiling */
+  object-position: center 15%; /* crops ceiling & lifts people up */
 
   /* soften + harmonise with hero */
   filter: 
