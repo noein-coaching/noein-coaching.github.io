@@ -967,7 +967,7 @@ main.flex-fill{
   object-fit: cover;
 
   /* LOWER the focus so people are visible */
-  object-position: center 70%;
+  object-position: center 75%;
 
   /* gentle fade, still calm */
   filter:
