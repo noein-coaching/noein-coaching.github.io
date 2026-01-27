@@ -962,18 +962,19 @@ main.flex-fill{
 
 
 /* Workplace: crop top and pull image upward */
-.about-work{
+  .about-work{
   aspect-ratio: 16 / 10;
-  object-position: center 15%; /* crops ceiling & lifts people up */
+  object-fit: cover;
 
-  /* soften + harmonise with hero */
-  filter: 
-    brightness(0.9)
+  /* LOWER the focus so people are visible */
+  object-position: center 55%;
+
+  /* gentle fade, still calm */
+  filter:
+    brightness(0.92)
     contrast(0.95)
     saturate(0.9);
 }
-
-
 
 /* Caption */
 .about-caption{
