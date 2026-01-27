@@ -963,3 +963,10 @@ main.flex-fill{
 
   box-shadow: 0 14px 40px rgba(0,0,0,0.08);
 }
+.about-caption{
+  max-width: 520px;
+  margin: 10px auto 0;
+  font-size: 0.95rem;
+  opacity: 0.8;
+  text-align: center;
+}
