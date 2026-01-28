@@ -1033,18 +1033,29 @@ main.flex-fill{
   height: 100%;
   flex: 1;
 }
-.contact-image-wrap {
-  width: 100%;
+/* Contact page: right-side layout stack */
+.contact-side-stack{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 
-.contact-image {
+/* Contact image in a “card” style */
+.contact-image-wrap{
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 40px rgba(72, 147, 193, 0.08);
+  background: #fffcfb;
+}
+
+.contact-image{
   width: 100%;
-  max-height: 300px;
+  height: 340px;         /* adjust if you want taller/shorter */
   object-fit: cover;
-  border-radius: 18px;
+  object-position: 50% 60%;  /* brings the “subject” slightly up/down */
   display: block;
 
-  /* subtle, homepage-style softness */
+  /* subtle/faded like your homepage */
   filter: brightness(0.92) contrast(0.92) saturate(0.9);
-  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+  opacity: 0.95;
 }
