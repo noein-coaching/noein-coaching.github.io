@@ -1017,3 +1017,12 @@ main.flex-fill{
 .equal-height-row > [class*="col-"]{
   display: flex;
 }
+/* Equal-height cards */
+.equal-height-row > [class*="col-"]{
+  display: flex;
+}
+
+.equal-height-row .content-card{
+  height: 100%;
+  flex: 1;
+}
