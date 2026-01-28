@@ -956,11 +956,12 @@ main.flex-fill{
   aspect-ratio: 4 / 5;
   object-position: center 25%;
   filter:
-    brightness(0.86)
-    contrast(0.88)
-    saturate(0.80)
-    grayscale(0.20);
-  opacity: 0.90;
+    brightness(0.90)
+    contrast(0.92)
+    saturate(1.10)
+    sepia(0.08)
+    grayscale(0.10);
+  opacity: 0.94;
 }
 
 
@@ -974,11 +975,12 @@ main.flex-fill{
 
   /* gentle fade, still calm */
   filter:
-    brightness(0.86)
-    contrast(0.88)
-    saturate(0.80)
-    grayscale(0.20);
-  opacity: 0.90;
+    brightness(0.90)
+    contrast(0.92)
+    saturate(1.10)
+    sepia(0.08)
+    grayscale(0.10);
+  opacity: 0.94;
 }
 .about-image-card + .about-image-card{
   margin-top: 28px;
