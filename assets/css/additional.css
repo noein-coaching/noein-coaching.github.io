@@ -870,8 +870,8 @@ main.flex-fill{
 
 /* === Space-to images: CIRCLES + floating above the cards === */
 .space-card-img{
-  width: 300px;          
-  height: 300px;         
+  width: 250px;          
+  height: 250px;         
   object-fit: cover;
   border-radius: 50%;    
   display: block;
