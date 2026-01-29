@@ -1204,3 +1204,7 @@ main.flex-fill{
 .contact-get-in-touch{
   padding-bottom: 52px; /* try 44–64px */
 }
+/* Ensure the image always feels dominant */
+.contact-banner-wrap {
+  min-height: 420px;
+}
