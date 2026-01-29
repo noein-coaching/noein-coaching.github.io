@@ -213,13 +213,10 @@ padding-left: 0px !important;
 }
 
 @media (min-width: 992px) {
-  .hero-tagline-line {
-    font-size: 1.4rem;
-  }
+  .hero-tagline-line { font-size: 1.4rem; }
+  .hero-tagline-image { max-width: 360px; }
+}
 
-  .hero-tagline-image {
-    max-width: 360px;
-  }
 
 #reviewCarousel .owl-dots .owl-dot span {
   background: #c0c0c0;
@@ -582,7 +579,7 @@ main.flex-fill {
 }
 
 @media (min-width: 768px) {
-  .row.align-items-start {
+  .equal-height-row {
     align-items: stretch !important;
   }
 }
