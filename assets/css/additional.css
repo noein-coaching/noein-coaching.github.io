@@ -1165,27 +1165,17 @@ main.flex-fill{
   opacity: 0.75;
 }
 
-
-/* ================================
-   CONTACT: image + right-side stack
-================================ */
-
-.contact-side-stack{
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.contact-image-wrap{
-  border-radius: 16px;
+/* CONTACT: wide image banner */
+.contact-banner-wrap{
+  border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 14px 40px rgba(72, 147, 193, 0.08);
   background: #fffcfb;
 }
 
-.contact-image{
+.contact-banner-img{
   width: 100%;
-  height: 380px;
+  height: 360px;              /* banner height */
   object-fit: cover;
   object-position: center;
   display: block;
@@ -1195,5 +1185,5 @@ main.flex-fill{
 }
 
 @media (max-width: 991px){
-  .contact-image{ height: 280px; }
+  .contact-banner-img{ height: 260px; }
 }
