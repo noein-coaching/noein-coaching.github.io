@@ -1200,3 +1200,7 @@ main.flex-fill{
     min-height: 240px;
   }
 }
+/* Contact: give the Get in touch card more breathing room */
+.contact-get-in-touch{
+  padding-bottom: 52px; /* try 44–64px */
+}
