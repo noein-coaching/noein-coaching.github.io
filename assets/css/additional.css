@@ -1232,4 +1232,7 @@ main.flex-fill{
     min-height: 240px;
     margin-bottom: 18px; /* space between image and card when stacked */
   }
+.contact-bottom-section .col-lg-6{
+  display: flex;
 }
+
