@@ -1190,15 +1190,14 @@ main.flex-fill{
   font-size: 0.95rem;
 }
 
-/* mobile tweaks */
-@media (max-width: 991px){
-  .contact-bottom-wrap{
-    padding: 18px;
+@media (max-width: 991px) {
+  .contact-bottom-row {
+    min-height: auto;
   }
 
   .contact-banner-wrap {
-  display: flex;
-  height: 100%;
+    min-height: 220px;
+  }
 }
 
 .contact-banner-img {
@@ -1228,4 +1227,8 @@ main.flex-fill{
   display: flex;
   flex-direction: column;
   justify-content: center; /* centers content vertically */
+}
+
+.contact-bottom-row .content-card {
+  padding: 28px;
 }
