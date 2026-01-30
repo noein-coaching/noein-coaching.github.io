@@ -536,43 +536,33 @@ main.flex-fill {
   row-gap: var(--vertical-column-gap);
 }
 
-/* ===============================
-   SPACE CARDS – equal height + centred content
-================================ */
+/* ===== Equal-height "Space to" cards ===== */ 
+.space-cards-section 
+.row{ 
+  display: flex; 
+  align-items: stretch; 
+} 
 
-.space-cards-section .col-lg-4{
-  display: flex;
-}
+.space-cards-section 
+.col-lg-4{ display: flex; 
+flex-direction: column; 
+} 
 
-.space-cards-section .content-card{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;   /* vertical centring */
-  padding: 64px 32px 72px;   /* more space at bottom */
-  text-align: left;
-}
+.space-cards-section 
+.content-card{ flex: 1;
+} 
 
-/* Ensure lists don't collapse spacing */
-.space-cards-section .content-card ul{
-  margin-bottom: 0;
-}
+.equal-height-row > [class*='col-'] { 
+  display: flex; 
+} 
 
-/* Circle positioning refinement */
-.space-cards-section .space-card-img{
-  transform: translateY(36px); /* visually centres circle */
-}
+.equal-height-row 
+.content-card { 
+  height: 100%; flex: 1; 
+} 
 
-/* Optional: keep everything aligned on smaller screens */
-@media (max-width: 991px){
-  .space-cards-section .content-card{
-    padding: 48px 28px 56px;
-    text-align: center;
-  }
-
-  .space-cards-section .space-card-img{
-    transform: translateY(28px);
-  }
+.equal-height-row { 
+  align-items: stretch !important; 
 }
 
 .headshot-card {
