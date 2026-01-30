@@ -1196,13 +1196,16 @@ main.flex-fill{
     padding: 18px;
   }
 
-  .contact-banner-wrap{
-    min-height: 240px;
-    margin-bottom: 18px; /* space between image and card when stacked */
-  }
+  .contact-banner-wrap {
+  display: flex;
+  height: 100%;
+}
 
-  .contact-banner-img{
-    min-height: 240px;
+.contact-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   }
 }
 /* Contact: give the Get in touch card more breathing room */
@@ -1212,4 +1215,9 @@ main.flex-fill{
 /* Ensure the image always feels dominant */
 .contact-banner-wrap {
   min-height: 420px;
+}
+
+/* CONTACT: shared height for image + card */
+.contact-bottom-row {
+  min-height: 360px;   /* ← adjust this number */
 }
