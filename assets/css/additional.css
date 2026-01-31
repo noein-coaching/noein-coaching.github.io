@@ -975,6 +975,11 @@ main.flex-fill{
   background: #fffcfb;
 }
 
+.about-combined-card{
+  max-width: 960px;   /* adjust to match your Ready-to-begin card */
+  margin: 0 auto;
+}
+
 /* SHORTER image */
 .about-workimg{
   width: 100%;
