@@ -986,7 +986,7 @@ main.flex-fill{
 /* SHORTER image */
 .about-workimg{
   width: 100%;
-  height: 200px;                 /* ↓ key change */
+  height: 100px;                 /* ↓ key change */
   object-fit: cover;
   object-position: center 65%;
   display: block;
@@ -1000,7 +1000,7 @@ main.flex-fill{
     padding: 18px;
   }
   .about-workimg{
-    min-height: 220px;
+    min-height: 100px;
   }
 }
 
