@@ -1218,7 +1218,7 @@ main.flex-fill{
 
 /* CONTACT: shared height for image + card */
 .contact-bottom-row {
-  min-height: 300px;   /* ← adjust this number */
+  min-height: 260px;   /* ← adjust this number */
 }
 
 /* Make Work with me card match image height */
