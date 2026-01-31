@@ -992,9 +992,13 @@ main.flex-fill{
 }
 
 .about-badge{
-  max-width: 180px;   /* smaller */
-  margin-top: 16px;
-  opacity: 0.85;      /* quieter */
+  max-width: 110px;   /* smaller, calmer */
+  width: 100%;
+  opacity: 0.95;
+}
+
+.about-combined-card .row{
+  align-items: center;
 }
 
 
