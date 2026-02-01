@@ -1181,6 +1181,10 @@ main.flex-fill{
      but this hook is here if you want tweaks later */
 }
 
+.section-spacer.tight {
+  padding: 12px 0;
+}
+
 /* Mobile tweaks */
 @media (max-width: 991px){
   .contact-journey-img{
