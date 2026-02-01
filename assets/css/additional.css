@@ -966,7 +966,33 @@ main.flex-fill{
   padding: 16px;
 }
 
-/* Image wrapper – same look, shorter */
+/* If .combined-wrap wraps a .content-card inside it, target that: */
+.combined-wrap > .content-card{
+  padding: 20px 22px; /* tighter than default 32px */
+}
+
+/* About combined card width (matches “Ready to begin” container width) */
+.about-combined-card{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Mini card inside combined card */
+.about-mini-card{
+  background: #fffcfb;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 10px 28px rgba(72, 147, 193, 0.07);
+}
+
+/* Badge sizing */
+.about-badge{
+  max-width: 110px;
+  width: 100%;
+  opacity: 0.95;
+}
+
+/* Image wrapper */
 .about-workimg-wrap{
   width: 100%;
   border-radius: 16px;
@@ -975,7 +1001,7 @@ main.flex-fill{
   background: #fffcfb;
 }
 
-/* SHORTER image */
+/* Shorter image */
 .about-workimg{
   width: 100%;
   height: 200px;
@@ -986,21 +1012,11 @@ main.flex-fill{
   opacity: 0.95;
 }
 
-/* Make the combined About card tighter */
-.content-card.combined-wrap{
-  padding: 20px 22px; /* was 32px */
+.about-caption{
+  margin-top: 12px;
+  font-size: 0.9rem;
+  opacity: 0.75;
 }
-
-.about-badge{
-  max-width: 110px;   /* smaller, calmer */
-  width: 100%;
-  opacity: 0.95;
-}
-
-.about-combined-card .row{
-  align-items: center;
-}
-
 
 /* Mobile */
 @media (max-width: 991px){
@@ -1008,9 +1024,10 @@ main.flex-fill{
     padding: 18px;
   }
   .about-workimg{
-    height: 220px; /* use height (not min-height) to override */
+    height: 220px;
   }
 }
+
 
 /* ================================
    SAFE EQUAL HEIGHT (only where needed)
