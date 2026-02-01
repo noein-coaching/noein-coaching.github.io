@@ -937,7 +937,7 @@ main.flex-fill{
 
 /* Circle portrait */
 .about-float-img + .about-float-card{
-  padding-top: 76px !important; /* was 64px */
+  padding-top: 64px !important;
 }
 
 
