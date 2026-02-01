@@ -1010,22 +1010,28 @@ main.flex-fill{
   opacity: 0.75;
 }
 
-/* Badge centered in the middle column */
+/* Badge column: true visual centring */
 .about-badge-col{
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
+/* Badge container */
 .about-badge-center{
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
+/* Badge size + balance */
 .about-badge{
-  max-width: 90px; /* smaller + calmer */
+  max-width: 120px;   /* ↑ slightly bigger (was ~90–110px) */
   width: 100%;
   opacity: 0.95;
 }
+
 
 /* Mobile: stack neatly */
 @media (max-width: 991px){
