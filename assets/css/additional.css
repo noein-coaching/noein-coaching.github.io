@@ -956,20 +956,17 @@ main.flex-fill{
   filter: brightness(0.95) contrast(0.95) saturate(0.9);
 }
 
-/* ================================
-   SHARED: combined card wrapper (Contact + About)
-================================ */
+/* Combined wrapper (matches Contact style) */
+.about-combined-card{
+  max-width: 960px;     /* same as your Ready-to-begin */
+  margin: 0 auto;
+}
+
 .combined-wrap{
   background: rgba(255, 252, 251, 0.65);
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(72, 147, 193, 0.06);
   padding: 16px;
-}
-
-
-/* About combined card width (matches “Ready to begin” container width) */
- .about-combined-card{
-  width: 100%;
 }
 
 /* Mini card inside combined card */
@@ -980,14 +977,14 @@ main.flex-fill{
   box-shadow: 0 10px 28px rgba(72, 147, 193, 0.07);
 }
 
-/* Badge sizing */
-.about-badge{
-  max-width: 110px;
-  width: 100%;
-  opacity: 0.95;
+/* Work block should behave like a card-column (same width as philosophy) */
+.about-work-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Image wrapper */
+/* Work image wrapper */
 .about-workimg-wrap{
   width: 100%;
   border-radius: 16px;
@@ -996,10 +993,9 @@ main.flex-fill{
   background: #fffcfb;
 }
 
-/* Shorter image */
 .about-workimg{
   width: 100%;
-  height: 200px;
+  height: 200px; /* keep shorter like your Contact banner crop */
   object-fit: cover;
   object-position: center 65%;
   display: block;
@@ -1007,21 +1003,45 @@ main.flex-fill{
   opacity: 0.95;
 }
 
+/* Caption */
 .about-caption{
   margin-top: 12px;
   font-size: 0.9rem;
   opacity: 0.75;
 }
 
-/* Mobile */
+/* Badge centered in the middle column */
+.about-badge-col{
+  align-items: center;
+}
+
+.about-badge-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-badge{
+  max-width: 90px; /* smaller + calmer */
+  width: 100%;
+  opacity: 0.95;
+}
+
+/* Mobile: stack neatly */
 @media (max-width: 991px){
   .combined-wrap{
     padding: 18px;
   }
+
+  .about-badge-col{
+    margin: 10px 0;
+  }
+
   .about-workimg{
     height: 220px;
   }
 }
+
 
 
 /* ================================
