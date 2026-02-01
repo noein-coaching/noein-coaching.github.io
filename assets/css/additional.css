@@ -935,26 +935,36 @@ main.flex-fill{
    ABOUT — right column layout
 ================================ */
 
-.about-right-stack{
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
 /* Circle portrait */
-.about-portrait-wrap{
-  display: flex;
-  justify-content: center;
+.about-float-img + .about-float-card{
+  padding-top: 76px !important; /* was 64px */
 }
 
-.about-portrait-circle{
+
+/* ABOUT: portrait floats like Space-to circles */
+.about-float-img{
   width: 250px;
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+  display: block;
+  margin: 0 auto;
+
+  transform: translateY(26px); /* same as your .space-card-img */
+  position: relative;
+  z-index: 2;
+
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
   filter: brightness(0.95) contrast(0.95) saturate(0.9);
 }
+
+/* Create room inside the card for the floating circle */
+.about-float-img + .about-float-card{
+  padding-top: 64px !important;  /* same idea as Space-to */
+  position: relative;
+  z-index: 1;
+}
+
 
 .combined-wrap{
   background: rgba(255, 252, 251, 0.65);
