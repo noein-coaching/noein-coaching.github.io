@@ -1185,9 +1185,16 @@ main.flex-fill{
     margin-bottom: 18px;
   }
 }
-/* SERVICES: match Contact top section exactly */
+/* SERVICES: align with Contact layout */
 .services-top-row{
   align-items: stretch;
+}
+
+/* Text block (no card, but vertically balanced) */
+.services-text-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Image card */
@@ -1200,15 +1207,13 @@ main.flex-fill{
   display: flex;
 }
 
-/* Image fills card height */
+/* Image fills height */
 .services-image{
   width: 100%;
-  height: 50%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
-
-  /* same calm grading as Contact */
   filter: brightness(0.88) contrast(0.95) saturate(0.9);
   opacity: 0.95;
 }
