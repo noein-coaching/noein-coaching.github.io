@@ -956,11 +956,6 @@ main.flex-fill{
   filter: brightness(0.95) contrast(0.95) saturate(0.9);
 }
 
-/* Match Ready-to-begin width exactly */
-  .about-combined-card{
-  max-width: 960px;
-}
-
 .combined-wrap{
   background: rgba(255, 252, 251, 0.65);
   border-radius: 18px;
