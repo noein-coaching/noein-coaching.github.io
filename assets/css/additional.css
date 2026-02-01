@@ -1223,6 +1223,11 @@ main.flex-fill{
   opacity: 0.96;
 }
 
+.services-top-row{
+  align-items: center;   /* vertical alignment */
+  display: flex;         /* safety (Bootstrap already does this, but keep it) */
+}
+
 /* Mobile */
 @media (max-width: 991px){
   .services-image-wrap{
