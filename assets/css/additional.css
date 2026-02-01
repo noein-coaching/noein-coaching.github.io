@@ -950,6 +950,15 @@ main.flex-fill{
   display: block;
   margin: 0 auto;
 
+  .about-right-col{
+  margin-top: 0;
+}
+  
+.about-right-col{
+  padding-top: 0 !important;
+}
+
+
   transform: translateY(26px); /* same as your .space-card-img */
   position: relative;
   z-index: 2;
@@ -965,6 +974,9 @@ main.flex-fill{
   z-index: 1;
 }
 
+.about-right-stack{
+  margin-top: -8px; /* small optical adjustment only */
+}
 
 .combined-wrap{
   background: rgba(255, 252, 251, 0.65);
