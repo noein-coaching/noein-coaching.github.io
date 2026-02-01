@@ -966,10 +966,6 @@ main.flex-fill{
   padding: 16px;
 }
 
-/* If .combined-wrap wraps a .content-card inside it, target that: */
-.combined-wrap > .content-card{
-  padding: 20px 22px; /* tighter than default 32px */
-}
 
 /* About combined card width (matches “Ready to begin” container width) */
 .about-combined-card{
