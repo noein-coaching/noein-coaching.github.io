@@ -957,11 +957,10 @@ main.flex-fill{
 }
 
 /* Match Ready-to-begin width exactly */
-.about-combined-card{
-  max-width: 960px;   /* same visual width as container card */
-  margin-left: auto;
-  margin-right: auto;
+  .about-combined-card{
+  max-width: 960px;
 }
+
 
 
 .combined-wrap{
