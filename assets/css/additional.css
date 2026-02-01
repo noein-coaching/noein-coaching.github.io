@@ -943,8 +943,8 @@ main.flex-fill{
 
 /* ABOUT: portrait floats like Space-to circles */
 .about-float-img{
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -960,7 +960,7 @@ main.flex-fill{
 
 /* Create room inside the card for the floating circle */
 .about-float-img + .about-float-card{
-  padding-top: 64px !important;  /* same idea as Space-to */
+  padding-top: 48px !important;  /* same idea as Space-to */
   position: relative;
   z-index: 1;
 }
