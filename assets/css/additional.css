@@ -1201,7 +1201,7 @@ main.flex-fill{
 
 .services-image-wrap{
   width: 100%;
-  height: 420px;                 /* ← controls final visible height */
+  height: 360px;                 /* ← controls final visible height */
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 14px 40px rgba(0,0,0,0.12);
