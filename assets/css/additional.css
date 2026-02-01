@@ -943,8 +943,8 @@ main.flex-fill{
 
 /* ABOUT: portrait floats like Space-to circles */
 .about-float-img{
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
