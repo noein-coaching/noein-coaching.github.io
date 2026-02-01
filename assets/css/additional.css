@@ -960,7 +960,7 @@ main.flex-fill{
 
 /* Create room inside the card for the floating circle */
 .about-float-img + .about-float-card{
-  padding-top: 48px !important;  /* same idea as Space-to */
+  padding-top: 48px !important;
   position: relative;
   z-index: 1;
 }
