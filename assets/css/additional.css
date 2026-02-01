@@ -956,11 +956,13 @@ main.flex-fill{
   filter: brightness(0.95) contrast(0.95) saturate(0.9);
 }
 
-/* Combined wrapper (matches Contact style) */
+/* Match Ready-to-begin width exactly */
 .about-combined-card{
-  max-width: 960px;     /* same as your Ready-to-begin */
-  margin: 0 auto;
+  max-width: 960px;   /* same visual width as container card */
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .combined-wrap{
   background: rgba(255, 252, 251, 0.65);
