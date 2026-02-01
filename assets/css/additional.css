@@ -969,8 +969,8 @@ main.flex-fill{
 
 /* About combined card width (matches “Ready to begin” container width) */
 .about-combined-card{
-  max-width: 960px;
-  margin: 0 auto;
+ .about-combined-card{
+  width: 100%;
 }
 
 /* Mini card inside combined card */
