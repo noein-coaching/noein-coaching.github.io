@@ -963,6 +963,10 @@ main.flex-fill{
   box-shadow: 0 10px 30px rgba(72, 147, 193, 0.06);
 }
 
+.about-combined-card{
+  /* NO max-width */
+}
+
 /* Mini card inside combined card */
 .about-mini-card{
   background: #fffcfb;
