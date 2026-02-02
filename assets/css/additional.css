@@ -1214,6 +1214,11 @@ main.flex-fill{
   height: 100%;
 }
 
+/* SERVICES: pull text up to visually align with image */
+.services-intro-section{
+  margin-top: -28px;
+}
+
 /* Ensure the right card fills its column */
 .services-sessions-card{
   width: 100%;
