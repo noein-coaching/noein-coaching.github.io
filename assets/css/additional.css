@@ -1168,18 +1168,16 @@ main.flex-fill{
   .contact-get-in-touch{ padding-bottom: 34px; }
 }
 
-
 /* ================================
-   SERVICES — hero image card
+   SERVICES — hero image + top row
 ================================ */
-/* SERVICES row alignment (force flex + vertical centering) */
-.services-top-row{
-  display: flex !important;
-  flex-wrap: wrap !important;   /* keep Bootstrap row behaviour */
-  align-items: center !important;
+
+/* optional: keep the tighter spacing you used in HTML */
+.section-spacer.tight{
+  padding: 12px 0;
 }
 
-/* SERVICES hero image */
+/* HERO image card */
 .services-image-wrap{
   width: 100%;
   height: 320px;
@@ -1199,8 +1197,29 @@ main.flex-fill{
   opacity: 0.96;
 }
 
+/* The key: vertically align the two columns */
+.services-top-row{
+  align-items: center !important;
+  flex-wrap: wrap; /* keep Bootstrap row wrapping */
+}
+
+/* Make the left text block fill the column height */
+.services-text-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure the right card fills its column */
+.services-sessions-card{
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile */
 @media (max-width: 991px){
   .services-image-wrap{ height: 240px; }
 }
 
-body{ outline: 5px solid red !important; }
