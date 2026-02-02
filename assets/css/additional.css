@@ -1204,23 +1204,15 @@ main.flex-fill{
   }
 }
 
-/* SERVICES: align text + image vertically */
+/* SERVICES — top: text + image align like Contact */
 .services-top-row{
-  align-items: center; /* ← key line */
+  align-items: center;
 }
 
-.services-text-block{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;          /* important */
-}
-
-/* SERVICES — image sizing like Contact page */
-
+/* Image card */
 .services-image-wrap{
   width: 100%;
-  height: 320px;   /* ← was 420px, try 300–340px */
+  height: 320px;                 /* adjust */
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 14px 40px rgba(0,0,0,0.12);
@@ -1231,26 +1223,17 @@ main.flex-fill{
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  /* THIS centres the chair visually */
-  object-position: center 65%;   /* adjust 55–70% if needed */
-
+  object-position: center 65%;   /* tweak 55–70% */
   display: block;
-
-  /* match your site tone */
   filter: brightness(0.9) contrast(0.95) saturate(0.9);
   opacity: 0.96;
 }
 
-.services-top-row{
-  align-items: center;   /* vertical alignment */
-  display: flex;         /* safety (Bootstrap already does this, but keep it) */
-}
-
 @media (max-width: 991px){
   .services-image-wrap{
-    height: 240px;
+    height: 240px;               /* 220–240 works well */
   }
 }
+
 
 
