@@ -1184,25 +1184,12 @@ main.flex-fill{
 /* ================================
    SERVICES — hero image card
 ================================ */
-.services-image-wrap{
-  width: 100%;
-  height: 380px;              /* desktop height */
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
-  background: #000;
+/* spacing helper (you already used this class in HTML) */
+.section-spacer.tight{
+  padding: 12px 0;
 }
 
-.services-image{
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center 65%;
-  filter: brightness(0.9) contrast(0.95) saturate(0.9);
-  opacity: 0.96;
-}
-
+/* HERO image */
 .services-image-wrap{
   width: 100%;
   height: 320px;
@@ -1215,18 +1202,33 @@ main.flex-fill{
 .services-image{
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
   object-position: center 65%;
-  display: block;
   filter: brightness(0.9) contrast(0.95) saturate(0.9);
   opacity: 0.96;
 }
 
+/* TOP ROW alignment (Contact-like) */
 .services-top-row{
-  display: flex !important;
-  align-items: center !important;
+  align-items: center !important; /* vertical align columns */
 }
 
+/* left text vertical centring + full height */
+.services-text-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* optional: ensure the right card fills column */
+.services-sessions-card{
+  width: 100%;
+}
+
+/* Mobile */
 @media (max-width: 991px){
   .services-image-wrap{ height: 240px; }
 }
+
