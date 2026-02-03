@@ -1199,10 +1199,9 @@ main.flex-fill{
   opacity: 0.96;
 }
 
-/* The key: vertically align the two columns */
+/* SERVICES — align text and card from the top */
 .services-top-row{
-  align-items: center !important;
-  flex-wrap: wrap; /* keep Bootstrap row wrapping */
+  align-items: flex-start;
 }
 
 /* Make the left text block fill the column height */
