@@ -1167,6 +1167,17 @@ main.flex-fill{
   margin: 0 auto;
 }
 
+/* Match spacing above (reduce gap before Work with me) */
+.contact-bottom-section{
+  margin-top: 12px;   /* was 28px */
+}
+
+/* Tighten section spacing for Work with me */
+.section-spacer.contact-work-section{
+  padding-top: 12px;
+}
+
+
 /* Mobile */
 @media (max-width: 991px){
   .contact-journey-img{ height: 240px; }
