@@ -583,6 +583,21 @@ flex-direction: column;
   margin: 0 auto;
 }
 
+/* Space cards: centre bullet list as a block */
+.space-cards-section .content-card .list-checks{
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 0;
+}
+
+/* Space cards: rebalance vertical padding */
+.space-cards-section .content-card{
+  padding-top: 26px !important;
+  padding-bottom: 32px !important;
+}
+
+
 @media (min-width: 768px) {
   .equal-height-row {
     align-items: stretch !important;
