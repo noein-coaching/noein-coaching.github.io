@@ -1177,6 +1177,20 @@ main.flex-fill{
   padding-top: 12px;
 }
 
+/* Center the bullet list as a block inside the card */
+.contact-work-card .list-checks{
+  max-width: 420px;     /* controls line length */
+  margin: 0 auto 24px; /* centers the block */
+  text-align: left;    /* keeps bullets readable */
+}
+
+/* Emphasise closing line */
+.contact-work-card .contact-note{
+  font-style: italic;
+  color: #820d0d;      /* your brand red */
+  margin-top: 18px;
+}
+
 
 /* Mobile */
 @media (max-width: 991px){
