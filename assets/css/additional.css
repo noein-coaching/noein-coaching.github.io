@@ -1268,3 +1268,21 @@ main.flex-fill{
   }
 }
 
+/* CTA: Ready to begin */
+.cta-section{
+  text-align: center;
+}
+
+.cta-inner{
+  max-width: 680px;     /* keeps it elegant, not stretched */
+  margin: 0 auto;      /* centres the block */
+}
+
+.cta-inner p{
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-section{
+  padding-top: 40px;
+}
+
