@@ -1191,6 +1191,9 @@ main.flex-fill{
   margin-top: 18px;
 }
 
+.contact-work-card .list-checks li{
+  margin-bottom: 8px;
+}
 
 /* Mobile */
 @media (max-width: 991px){
