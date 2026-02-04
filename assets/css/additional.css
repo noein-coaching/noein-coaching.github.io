@@ -1269,15 +1269,24 @@ main.flex-fill{
   }
 }
 
-/* FINAL CTA centring */
-.cta-section .container{
-  display: flex;
-  justify-content: center;
+/* FORCE CTA to be centered (works with your current markup) */
+.section-spacer.cta-section .container,
+.section-spacer.cta-section .container.text-center{
+  display: flex !important;
+  justify-content: center !important;
 }
 
-.cta-inner{
-  text-align: center;
-  max-width: 680px;
-  width: 100%;
+.section-spacer.cta-section .cta-inner{
+  width: 100% !important;
+  max-width: 680px !important;
+  text-align: center !important;
 }
+
+.section-spacer.cta-section .cta-inner p{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.section-spacer.cta-section{ outline: 4px solid hotpink !important; }
+
 
