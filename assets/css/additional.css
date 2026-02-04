@@ -1269,21 +1269,21 @@ main.flex-fill{
   }
 }
 
-/* CTA: center the whole block in the container */
+/* CTA centered like the cards above */
 .cta-section .container{
-  display: flex;
-  justify-content: center;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 .cta-section .cta-inner{
   width: 100%;
   max-width: 680px;
-  text-align: center;
-  margin: 0 auto; /* extra safety */
+  text-align: center !important;
+  margin: 0 auto !important;
 }
 
-/* optional: if anything is forcing left text alignment */
-.cta-inner{ max-width: 680px; 
+.cta-section .cta-inner p{
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
+.cta-section{ outline: 4px solid lime !important; }
