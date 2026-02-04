@@ -1269,7 +1269,21 @@ main.flex-fill{
   }
 }
 
+/* CTA: center the whole block in the container */
+.cta-section .container{
+  display: flex;
+  justify-content: center;
+}
 
-.cta-inner{ max-width: 680px; }
+.cta-section .cta-inner{
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+  margin: 0 auto; /* extra safety */
+}
+
+/* optional: if anything is forcing left text alignment */
+.cta-inner{ max-width: 680px; 
+}
 
 
