@@ -1273,6 +1273,7 @@ main.flex-fill{
 .cta-section{
   display: flex;
   justify-content: center;
+  padding-top: 40px;
 }
 
 .cta-inner{
@@ -1285,7 +1286,3 @@ main.flex-fill{
   margin-left: auto;
   margin-right: auto;
 }
-.cta-section{
-  padding-top: 40px;
-}
-
