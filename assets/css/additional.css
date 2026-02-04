@@ -1161,6 +1161,12 @@ main.flex-fill{
   padding-bottom: 52px;
 }
 
+.contact-work-card{
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
 /* Mobile */
 @media (max-width: 991px){
   .contact-journey-img{ height: 240px; }
