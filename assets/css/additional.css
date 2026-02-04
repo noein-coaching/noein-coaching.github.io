@@ -1269,22 +1269,19 @@ main.flex-fill{
   }
 }
 
-/* FORCE CTA to be centered (works with your current markup) */
-.section-spacer.cta-section .container,
-.section-spacer.cta-section .container.text-center{
-  display: flex !important;
-  justify-content: center !important;
+/* FINAL CTA – true visual centering */
+.cta-section {
+  text-align: center;
 }
 
-.section-spacer.cta-section .cta-inner{
-  width: 100% !important;
-  max-width: 680px !important;
-  text-align: center !important;
+.cta-section .cta-inner {
+  max-width: 680px;          /* matches visual card width */
+  margin: 0 auto;            /* centers it within container */
 }
 
-.section-spacer.cta-section .cta-inner p{
-  margin-left: auto !important;
-  margin-right: auto !important;
+.cta-section p {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
