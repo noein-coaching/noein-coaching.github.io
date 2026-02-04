@@ -1269,19 +1269,7 @@ main.flex-fill{
   }
 }
 
-/* FINAL CTA – true visual centering */
-.cta-section {
-  text-align: center;
-}
 
-.cta-section .cta-inner {
-  max-width: 680px;          /* matches visual card width */
-  margin: 0 auto;            /* centers it within container */
-}
-
-.cta-section p {
-  margin-left: auto;
-  margin-right: auto;
-}
+.cta-inner{ max-width: 680px; }
 
 
