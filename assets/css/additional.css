@@ -1336,3 +1336,25 @@ main.flex-fill{
   margin-right: auto;
 }
 
+@media (max-width: 768px){
+  p {
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 576px){
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.btn {
+  margin-top: 12px;
+}
+@media (max-width: 768px){
+  .space-card-img,
+  .about-float-img {
+    transform: none;
+    margin-bottom: 12px;
+  }
+}
