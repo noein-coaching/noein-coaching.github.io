@@ -34,11 +34,6 @@
     border-radius: 0 !important;
     box-shadow: none !important;
   }
-.preloader-accent{
-  font-style: italic;
-  color: #820d0d; /* your brand red */
-}
-
 
 .underlineload:hover:after{
   background: #820d0d !important;
