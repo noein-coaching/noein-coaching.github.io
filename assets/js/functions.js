@@ -188,35 +188,36 @@ else if ($body.attr("data-preloader") === "11") {
   //
   // Sticky Navbar //
   //
+    //
+  // Sticky Navbar //
+  //
   if ($(".navbar-sticky").length) {
-  var navbarSticky = $(".navbar-sticky");
-  var navbarOffset = navbarSticky.offset().top;
+    var navbarSticky = $(".navbar-sticky");
+    var navbarOffset = navbarSticky.offset().top;
 
-  function updateStickyNavbar() {
-    var navbarPlaceholder = $(".navbar-placeholder");
+    function updateStickyNavbar() {
+      var navbarPlaceholder = $(".navbar-placeholder");
 
-    if ($(window).scrollTop() >= navbarOffset) {
-      navbarSticky.addClass("navbar-sticky-apply");
-      navbarPlaceholder.addClass("navbar-placeholder-padding");
-    } else {
-      navbarSticky.removeClass("navbar-sticky-apply");
-      navbarPlaceholder.removeClass("navbar-placeholder-padding");
+      if ($(window).scrollTop() >= navbarOffset) {
+        navbarSticky.addClass("navbar-sticky-apply");
+        navbarPlaceholder.addClass("navbar-placeholder-padding");
+      } else {
+        navbarSticky.removeClass("navbar-sticky-apply");
+        navbarPlaceholder.removeClass("navbar-placeholder-padding");
+      }
+
+      if ($(window).scrollTop() >= navbarOffset + 20) {
+        navbarSticky.addClass("navbar-shrink");
+      } else {
+        navbarSticky.removeClass("navbar-shrink");
+      }
     }
 
-    if ($(window).scrollTop() >= navbarOffset + 20) {
-      navbarSticky.addClass("navbar-shrink");
-    } else {
-      navbarSticky.removeClass("navbar-shrink");
-    }
-  }
+    // Run once immediately (fixes the “gap until scroll”)
+    updateStickyNavbar();
 
-  // run once immediately (fixes the “gap until scroll”)
-  updateStickyNavbar();
-
-  // keep working on scroll
-  $(window).on("scroll", updateStickyNavbar);
-}
-    });
+    // Keep working on scroll
+    $(window).on("scroll", updateStickyNavbar);
   }
 
   /*===============================================
