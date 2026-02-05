@@ -15,7 +15,9 @@ if ($body.attr("data-preloader") === "1") {
   $body.append($("<div class='preloader preloader-1'><div><span></span></div></div>"));
 }
 else if ($body.attr("data-preloader") === "2") {
-  $body.append($("<div class='preloader preloader-2'><div class='preloader-message'>A space to <i class="blue-font-color">think</i>.</div></div>"));
+  $body.append(
+    $("<div class='preloader preloader-2'><div class='preloader-message'>A space to <span class='preloader-accent'>think</span>.</div></div>")
+  );
 }
 else if ($body.attr("data-preloader") === "3") {
   $body.append($("<div class='preloader preloader-3'><div><span></span><span></span><span></span></div></div>"));
