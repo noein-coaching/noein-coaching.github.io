@@ -890,6 +890,13 @@ main.flex-fill{
   }
 }
 
+/* HOMEPAGE: match Services image → title spacing */
+.section-hero-intro {
+  padding-top: 20px !important;
+  margin-top: 0 !important;
+}
+
+
 /* === Space-to images: CIRCLES + floating above the cards === */
 .space-card-img{
   width: 200px;          
