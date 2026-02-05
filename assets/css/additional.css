@@ -1385,3 +1385,9 @@ main.flex-fill{
 section.section-spacer.tight:has(.contact-journey-wrap){
   padding-bottom: 12px !important;
 }
+
+/* Fallback: reduce spacing on the section immediately after the banner section */
+section.section-spacer.tight:has(.contact-journey-wrap) + section.section-spacer{
+  padding-top: 12px !important;
+  margin-top: 0 !important;
+}
