@@ -1370,11 +1370,18 @@ main.flex-fill{
     margin-bottom: 12px;
   }
 }
-/* CONTACT: match Services banner → content spacing */
-.contact-journey-wrap {
-  margin-bottom: 12px; /* same visual gap as Services */
+
+/* CONTACT: match Services spacing under the banner image */
+.contact-journey-wrap{
+  margin-bottom: 12px !important;
 }
 
-.contact-top-section {
-  margin-top: 0 !important;
+/* This is usually the real culprit (your CSS earlier had margin-top: 28px) */
+.contact-top-section{
+  margin-top: 12px !important;  /* try 12px first */
+}
+
+/* If the contact banner section itself has extra padding, tighten it */
+section.section-spacer.tight:has(.contact-journey-wrap){
+  padding-bottom: 12px !important;
 }
