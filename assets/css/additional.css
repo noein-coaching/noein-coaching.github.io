@@ -1388,8 +1388,10 @@ main.flex-fill{
   margin-top: 12px !important;
 }
 
+/* Brand word styling */
 .brand-name{
-  color: #820d0d;
-  font-style: normal;
-  font-weight: 600; /* optional */
+  color: #820d0d !important;        /* brand red */
+  font-family: "GystRegular", serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;      /* Gyst is designed at regular weight */
 }
