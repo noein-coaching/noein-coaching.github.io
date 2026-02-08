@@ -1387,3 +1387,9 @@ main.flex-fill{
 .contact-top-section{
   margin-top: 12px !important;
 }
+
+.brand-name{
+  color: #820d0d;
+  font-style: normal;
+  font-weight: 600; /* optional */
+}
