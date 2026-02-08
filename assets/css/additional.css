@@ -1148,10 +1148,6 @@ main.flex-fill{
    3) Single Work with me card underneath
    ========================================================= */
 
-.section-spacer.tight{
-  padding: 12px 0;
-}
-
 /* 1) TOP image */
 .contact-journey-wrap{
   width: 100%;
@@ -1171,23 +1167,11 @@ main.flex-fill{
   opacity: 0.95;
 }
 
-/* spacing between image > row > work card */
-.contact-bottom-section{ margin-top: 28px; }
-
 /* CONTACT: match Services gap after banner */
 .contact-top-section{
   margin-top: 0 !important;   /* kill the extra 28px */
 }
 
-/* Give both Services + Contact banners the same bottom spacing */
-.section-spacer.tight{
-  padding-bottom: 12px !important;  /* controls gap under banner */
-}
-
-/* And make the next section start the same way */
-.section-spacer.tight + .section-spacer{
-  padding-top: 12px !important;     /* controls gap above first content */
-}
 
 /* Left text vertical alignment */
 .contact-intro-text{
@@ -1239,7 +1223,7 @@ main.flex-fill{
 /* Mobile */
 @media (max-width: 991px){
   .contact-journey-img{ height: 240px; }
-  .contact-top-section{ margin-top: 18px; }
+  .contact-top-section{ margin-top: 0 !important; }
   .contact-bottom-section{ margin-top: 18px; }
   .contact-get-in-touch{ padding-bottom: 34px; }
 }
@@ -1247,11 +1231,6 @@ main.flex-fill{
 /* ================================
    SERVICES — hero image + top row
 ================================ */
-
-/* optional: keep the tighter spacing you used in HTML */
-.section-spacer.tight{
-  padding: 12px 0;
-}
 
 /* HERO image card */
 .services-image-wrap{
@@ -1291,7 +1270,7 @@ main.flex-fill{
 
 /* SERVICES: pull text up to visually align with image */
 .services-intro-section{
-  margin-top: -28px;
+  margin-top: 0 !important;
 }
 
 /* Ensure the right card fills its column */
@@ -1392,3 +1371,16 @@ main.flex-fill{
   font-style: normal !important;
   font-weight: 400 !important;      /* Gyst is designed at regular weight */
 }
+
+/* Shared tight-section spacing (Services + Contact) */
+.section-spacer.tight{
+  padding: 12px 0 !important;
+}
+
+.section-spacer.tight + .section-spacer{
+  padding-top: 12px !important;
+  margin-top: 0 !important;
+}
+
+
+
