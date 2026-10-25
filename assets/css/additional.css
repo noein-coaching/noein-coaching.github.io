@@ -1296,7 +1296,7 @@ main.flex-fill{
 /* Image wrapper */
 .coaching-help-image-wrap{
   width: 100%;
-  height: 3200px;
+  height: 320px;
   border-radius: 18px;                 /* match .content-card */
   overflow: hidden;
   background: #fffcfb;                 /* same as cards */
